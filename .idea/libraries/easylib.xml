@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="easylib">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../easylib/out/artifacts/easylib_jar/easylib.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Oppgaver/easylib/out/artifacts/easylib_jar/easylib.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
