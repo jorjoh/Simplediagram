@@ -30,13 +30,13 @@ public class ClassSymbol extends Figuremodel {
 		// venstreside
 		elements.add(new LineElement(venstre, new Point(150, 100), Hold.END));
 		// hoyreside
-		elements.add(new LineElement(hoyreside, new Point(700, 700), Hold.END));
+		elements.add(new LineElement(hoyreside, new Point(700, 700), Hold.FRONT));
 
 		// bunn
-		elements.add(new LineElement(bunn, new Point(150, 700), Hold.NONE));
+		elements.add(new LineElement(bunn, new Point(150, 700), Hold.FRONT));
 
 		// topp
-		elements.add(new LineElement(topp, new Point(150, 100), Hold.NONE));
+		elements.add(new LineElement(topp, new Point(150, 100), Hold.FRONT));
 
 		elements.add(new TextElement("ClassSymbol", LabelAlign.BOTTOM));
 	}
