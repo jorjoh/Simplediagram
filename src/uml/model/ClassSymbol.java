@@ -19,7 +19,7 @@ public class ClassSymbol extends Figuremodel {
 		figureName = "Actor";
 		start = new Point(x, y);
 		reference = new Point(500, 180);
-		Point arm = new Point(500, 220);
+
 		Point venstre = new Point(150, 700);
 		Point hoyreside = new Point(700, 100);
 
