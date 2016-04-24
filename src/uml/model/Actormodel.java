@@ -10,9 +10,9 @@ import figure.model.Figuremodel;
 
 public class Actormodel extends Figuremodel implements Cloneable {
 
-	// Figuren plasseres på en virtuell flate på 1000X1000
-	// Figurens mål er innenfor en ny virtuell flate på 1000X1000
-	// Alle posisjoner og størrelser er i virtuelle mål
+	// Figuren plasseres pï¿½ en virtuell flate pï¿½ 1000X1000
+	// Figurens mï¿½l er innenfor en ny virtuell flate pï¿½ 1000X1000
+	// Alle posisjoner og stï¿½rrelser er i virtuelle mï¿½l
 
 	public Actormodel(int x, int y) {
 		figureName = "Actor";
@@ -24,13 +24,13 @@ public class Actormodel extends Figuremodel implements Cloneable {
 		virtual = new Dimension(100, 100);
 		// venstre arm
 		elements.add(new LineElement(arm, new Point(200, 500), Hold.END));
-		// høyre arm
+		// hï¿½yre arm
 		elements.add(new LineElement(arm, new Point(800, 500), Hold.END));
 		// kroppen
 		elements.add(new LineElement(reference, new Point(500, 470), Hold.NONE));
 		// venstre bein
 		elements.add(new LineElement(leg, new Point(350, 700), Hold.NONE));
-		// høyre bein
+		// hï¿½yre bein
 		elements.add(new LineElement(leg, new Point(650, 700), Hold.NONE));
 		// hodet
 		elements.add(new EllipseElement(reference, new Point(160, 160), Hold.NONE));
