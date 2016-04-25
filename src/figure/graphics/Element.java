@@ -35,7 +35,7 @@ abstract public class Element implements IFigure, ISVGelement {
 		return p;
 	}
 
-	// lag på nytt når nødvendig
+	// lag pï¿½ nytt nï¿½r nï¿½dvendig
 	protected ArrayList<Point> traceresult() {
 		return null;
 	}

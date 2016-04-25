@@ -25,15 +25,16 @@ public class Node extends Figuremodel{
 		virtual = new Dimension(200, 200);
 
 		// Ovre venstreside
-		elements.add(new LineElement(nedrevenstre, new Point(200, 350), Hold.END));
+		elements.add(new LineElement(nedrevenstre, new Point(200, 350), Hold.NONE));
+
 		// Ovre hoyreside
-		elements.add(new LineElement(ovrehoyreside, new Point(654, 385), Hold.FRONT));
+		elements.add(new LineElement(ovrehoyreside, new Point(654, 385), Hold.TRACE));
 
 		// Øvre venstreside
-		elements.add(new LineElement(ovrevenstre, new Point(200, 350), Hold.FRONT));
+		elements.add(new LineElement(ovrevenstre, new Point(200, 350), Hold.NONE));
 
 		// Nedre høyreside
-		elements.add(new LineElement(nedrehoyre, new Point(450, 650), Hold.FRONT));
+		elements.add(new LineElement(nedrehoyre, new Point(450, 650), Hold.NONE));
 
 		elements.add(new TextElement("Node", LabelAlign.BOTTOM));
 	}

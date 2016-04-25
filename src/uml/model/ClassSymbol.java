@@ -1,5 +1,6 @@
 package uml.model;
 
+import figure.graphics.Element;
 import figure.graphics.LineElement;
 import figure.graphics.TextElement;
 import figure.model.Figuremodel;
@@ -28,15 +29,13 @@ public class ClassSymbol extends Figuremodel {
 		virtual = new Dimension(200, 200);
 
 		// venstreside
-		elements.add(new LineElement(venstre, new Point(150, 100), Hold.END));
+		elements.add(new LineElement(venstre, new Point(150, 100), Hold.NONE));
 		// hoyreside
-		elements.add(new LineElement(hoyreside, new Point(700, 700), Hold.FRONT));
-
+		elements.add(new LineElement(hoyreside, new Point(700, 700), Hold.TRACE));
 		// bunn
-		elements.add(new LineElement(bunn, new Point(150, 700), Hold.FRONT));
-
+		elements.add(new LineElement(bunn, new Point(150, 700), Hold.NONE));
 		// topp
-		elements.add(new LineElement(topp, new Point(150, 100), Hold.FRONT));
+		elements.add(new LineElement(topp, new Point(150, 100), Hold.NONE));
 
 		elements.add(new TextElement("ClassSymbol", LabelAlign.BOTTOM));
 	}
