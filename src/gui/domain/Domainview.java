@@ -28,7 +28,7 @@ public class Domainview extends JPanel implements IFigure {
 		diagram.addFigure(new Actormodel(100, 50));
 		diagram.addFigure(new Usecasemodel(200, 55));
 		diagram.addFigure(new ClassSymbol(300,60));
-		diagram.addFigure(new ClassSymbol2(400,160));
+		diagram.addFigure(new ClassSymbol(400,160));
 		diagram.addFigure(new Node(500,60));
 		setShadow(Shadows.LOW.f());
 		setBackground(Color.WHITE);

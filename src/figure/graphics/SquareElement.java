@@ -10,9 +10,10 @@ import java.util.ArrayList;
 /**
  * Created by Jørgen Johansen on 26.04.2016.
  */
-public class SquareElement extends ConnectElement {
+public class SquareElement extends LineElement {
 
-	public SquareElement(Point a, Point b, IFigure.Hold c) {
+	public SquareElement(Point a, Point b, Hold c) {
+		super(a,b,c);
 		virtualstart = a;
 		virtualstop = b;
 		connectionrule = c;
@@ -32,7 +33,7 @@ public class SquareElement extends ConnectElement {
 		if (connectionrule == Hold.TRACE){
 			//q.add(new Point(25,10));
 			//Toppen
-			q.add(new Point(20,10));
+			q.add(new Point(45,10));
 			q.add(new Point(60,10));
 			//Høyreside
 			q.add(new Point(70,20));

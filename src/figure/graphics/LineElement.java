@@ -27,7 +27,7 @@ public class LineElement extends ConnectElement {
 		ArrayList<Point> q = new ArrayList<Point>();
 		if (connectionrule == Hold.TRACE){
 			//q.add(new Point(25,10));
-			q.add(new Point(35,10));
+			q.add(new Point(45,10));
 			q.add(new Point(55,10));
 			//q.add(new Point(55,10));
 
