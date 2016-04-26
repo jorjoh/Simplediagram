@@ -32,7 +32,7 @@ public class ClassSymbol extends Figuremodel {
 			// hoyreside
 			elements.add(new SquareElement(hoyreside, new Point(700, 700), Hold.NONE));
 			// bunn
-			elements.add(new SquareElement(bunn, new Point(150, 700), Hold.NONE));
+			elements.add(new SquareElement(bunn, new Point(150, 700), Hold.TRACE));
 			// topp
 			elements.add(new SquareElement(topp, new Point(150, 100), Hold.TRACE));
 

@@ -27,7 +27,7 @@ public class SquareElement extends LineElement {
 		((Line2D.Double) element).setLine(realstart, realstop);
 	}
 	public void recalculate(){
-		System.out.println("Realstart x = "+(realstart.x + realstop.x) );
+		System.out.println("Realstart +realstopp x = "+(realstart.x + realstop.x) );
 	}
 
 	public boolean isHot(Point d) {
@@ -39,17 +39,17 @@ public class SquareElement extends LineElement {
 		if (connectionrule == Hold.TRACE){
 			//q.add(new Point(25,10));
 			//Toppen
-			q.add(new Point(((realstart.x + realstop.x)/3),10));
-			q.add(new Point(((realstart.x + realstop.x)/3)*2,10));
+			q.add(new Point(((realstart.x + realstop.x)/3),realstart.y));
+			q.add(new Point(((realstart.x + realstop.x)/3)*2,realstart.y));
 			//Høyreside
-			q.add(new Point(70,35));
-			q.add(new Point(70,60));
+			//q.add(new Point(70,35));
+			//q.add(new Point(70,60));
 			//Venstre side
-			q.add(new Point(20,35));
-			q.add(new Point(20,60));
+			//q.add(new Point(20,35));
+			//q.add(new Point(20,60));
 			//Bunnen
-			q.add(new Point(35,70));
-			q.add(new Point(60,70));
+			q.add(new Point(((realstart.x + realstop.x)/3),realstart.y));
+			q.add(new Point(((realstart.x + realstop.x)/3)*2,realstart.y));
 
 		}
 		return q;
