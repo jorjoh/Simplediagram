@@ -28,11 +28,11 @@ public class ClassSymbol extends Figuremodel {
 			virtual = new Dimension(200, 200);
 
 			// venstreside
-			elements.add(new SquareElement(venstre, new Point(150, 100), Hold.TRACE));
+			elements.add(new SquareElement(venstre, new Point(150, 100), Hold.NONE));
 			// hoyreside
-			elements.add(new SquareElement(hoyreside, new Point(700, 700), Hold.TRACE));
+			elements.add(new SquareElement(hoyreside, new Point(700, 700), Hold.NONE));
 			// bunn
-			elements.add(new SquareElement(bunn, new Point(150, 700), Hold.TRACE));
+			elements.add(new SquareElement(bunn, new Point(150, 700), Hold.NONE));
 			// topp
 			elements.add(new SquareElement(topp, new Point(150, 100), Hold.TRACE));
 
