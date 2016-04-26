@@ -25,11 +25,10 @@ public class Domainview extends JPanel implements IFigure {
 		setLayout(new BorderLayout());
 		add(diagram);
 		add(sh, BorderLayout.SOUTH);
-		diagram.addFigure(new Actormodel(100, 50));
-		diagram.addFigure(new Usecasemodel(200, 55));
-		diagram.addFigure(new ClassSymbol(300,60));
-		diagram.addFigure(new ClassSymbol(400,160));
-		diagram.addFigure(new Node(500,60));
+		diagram.addFigure(new Actormodel(10, 10));
+		diagram.addFigure(new Business(10, 80));
+		diagram.addFigure(new ClassSymbol(10,130));
+		diagram.addFigure(new Node(10,250));
 		setShadow(Shadows.LOW.f());
 		setBackground(Color.WHITE);
 	}
