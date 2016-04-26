@@ -1,14 +1,18 @@
 package figure.graphics;
 
-import java.awt.Point;
+import figure.model.IFigure;
+import figure.model.Scaler;
+
+import java.awt.*;
 import java.awt.geom.Line2D;
 import java.util.ArrayList;
 
-import figure.model.Scaler;
+/**
+ * Created by Jørgen Johansen on 26.04.2016.
+ */
+public class SquareElement extends ConnectElement {
 
-public class LineElement extends ConnectElement {
-
-	public LineElement(Point a, Point b, Hold c) {
+	public SquareElement(Point a, Point b, IFigure.Hold c) {
 		virtualstart = a;
 		virtualstop = b;
 		connectionrule = c;
@@ -27,12 +31,20 @@ public class LineElement extends ConnectElement {
 		ArrayList<Point> q = new ArrayList<Point>();
 		if (connectionrule == Hold.TRACE){
 			//q.add(new Point(25,10));
-			q.add(new Point(35,10));
-			q.add(new Point(55,10));
-			//q.add(new Point(55,10));
+			//Toppen
+			q.add(new Point(20,10));
+			q.add(new Point(60,10));
+			//Høyreside
+			q.add(new Point(70,20));
+			q.add(new Point(70,60));
+			//Venstre side
+			q.add(new Point(20,20));
+			q.add(new Point(20,60));
+			//Bunnen
+			q.add(new Point(20,70));
+			q.add(new Point(60,70));
 
 		}
 		return q;
 	}
-
 }
