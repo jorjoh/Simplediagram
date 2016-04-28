@@ -17,9 +17,8 @@ public class NodeElement extends LineElement {
 		virtualstart = a;
 		virtualstop = b;
 		connectionrule = c;
-		System.out.println("Virtualstart:" +a.x);
-		System.out.println("Virtualstop:" +b.y);
-
+	//	System.out.println("Virtualstart:" +a.x);
+		//System.out.println("Virtualstop:" +b.y);
 	}
 
 
@@ -31,9 +30,9 @@ public class NodeElement extends LineElement {
 
 	public void recalculate(){
 		System.out.println("Realstart x = "+(realstart.x));
-		System.out.println("Realstopp x = "+(realstop.x));
-		System.out.println("---------------------------");
 		System.out.println("Realstart y = "+(realstart.y));
+		System.out.println("---------------------------");
+		System.out.println("Realstopp x = "+(realstop.x));
 		System.out.println("Realstopp y = "+(realstop.y));
 	}
 
@@ -42,12 +41,16 @@ public class NodeElement extends LineElement {
 	}
 
 	protected ArrayList<Point> traceresult() {
+		recalculate();
 		//System.out.println("NodeElement");
 		ArrayList<Point> q = new ArrayList<Point>();
 		if (connectionrule == Hold.TRACE){
 
-			q.add(new Point(((realstart.x + realstart.x)/3),realstart.y/3));
-			q.add(new Point(((realstart.x + realstop.x)/2),realstart.y/2));
+			q.add(new Point(((realstart.x - realstop.x)+realstart.x),realstop.y-realstart.y));
+			q.add(new Point((((realstart.x - realstop.x)+realstart.x)/4),realstop.y-realstart.y));
+			q.add(new Point((((realstart.x - realstop.x)+realstart.x)/4),(realstop.y-realstart.y)+realstart.y));
+			q.add(new Point((((realstart.x - realstop.x)+realstart.x)/4),(realstop.y-realstart.y)+realstart.y+realstart.y));
+
 
 
 		}

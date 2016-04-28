@@ -40,7 +40,7 @@ public class Node extends Figuremodel{
 		// Øverhoyreside
 		elements.add(new NodeElement(ovrehoyreside, new Point(600, 250), Hold.NONE));
 		// Øvretopp
-		elements.add(new NodeElement(overtopp, new Point(340, 100), Hold.TRACE));
+		elements.add(new NodeElement(overtopp, new Point(340, 100), Hold.NONE));
 		//Øvrebunn
 		elements.add(new NodeElement(overbunn, new Point(200, 250), Hold.NONE));
 		/** Slutt på øverste del av node**/
@@ -51,7 +51,7 @@ public class Node extends Figuremodel{
 		//Hoved Høyreside
 		elements.add(new NodeElement(mainHoyre, new Point(600,560), Hold.NONE));
 		//Hoved Bunn
-		elements.add(new NodeElement(mainBunn, new Point(210,560),Hold.TRACE));
+		elements.add(new NodeElement(mainBunn, new Point(210,560),Hold.NONE));
 		//Hoved BunnSide
 		elements.add(new NodeElement(mainBunnSide, new Point(610,560),Hold.NONE));
 		//Hoved kanten høyreside
