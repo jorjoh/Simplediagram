@@ -1,5 +1,6 @@
 package uml.model;
 
+import figure.graphics.LineElement;
 import figure.graphics.SquareElement;
 import figure.graphics.TextElement;
 import figure.model.Figuremodel;
@@ -24,13 +25,13 @@ public class Component extends Figuremodel {
 		virtual = new Dimension(500, 150);
 
 		// venstreside
-		elements.add(new SquareElement(venstre, new Point(50, 200), Hold.TRACE));
+		elements.add(new LineElement(venstre, new Point(50, 200), Hold.NONE));
 		// hoyreside
-		elements.add(new SquareElement(hoyreside, new Point(900, 800), Hold.TRACE));
+		elements.add(new LineElement(hoyreside, new Point(900, 800), Hold.TRACE));
 		// bunn
-		elements.add(new SquareElement(bunn, new Point(50, 800), Hold.TRACE));
+		elements.add(new LineElement(bunn, new Point(50, 800), Hold.TRACE));
 		// topp
-		elements.add(new SquareElement(topp, new Point(50, 200), Hold.TRACE));
+		elements.add(new LineElement(topp, new Point(50, 200), Hold.TRACE));
 
 		elements.add(new TextElement("Component", LabelAlign.BOTTOM));
 	}

@@ -1,6 +1,7 @@
 package uml.model;
 
 import figure.graphics.LineElement;
+import figure.graphics.NodeElement;
 import figure.graphics.SquareElement;
 import figure.graphics.TextElement;
 import figure.model.Figuremodel;
@@ -13,7 +14,7 @@ import java.awt.*;
 public class Node extends Figuremodel{
 
 	public Node(int x, int y) {
-		figureName = "Actor";
+		figureName = "Node";
 		start = new Point(x, y);
 		reference = new Point(500, 180);
 
@@ -35,25 +36,26 @@ public class Node extends Figuremodel{
 
 		/** Øverste del av noden **/
 		// venstreside
-		elements.add(new LineElement(venstre, new Point(200, 250), Hold.NONE));
+		elements.add(new NodeElement(venstre, new Point(200, 250), Hold.NONE));
 		// Øverhoyreside
-		elements.add(new LineElement(ovrehoyreside, new Point(600, 250), Hold.NONE));
+		elements.add(new NodeElement(ovrehoyreside, new Point(600, 250), Hold.NONE));
 		// Øvretopp
-		elements.add(new LineElement(overtopp, new Point(340, 100), Hold.TRACE));
+		elements.add(new NodeElement(overtopp, new Point(340, 100), Hold.TRACE));
 		//Øvrebunn
-		elements.add(new LineElement(overbunn, new Point(200, 250), Hold.NONE));
+		elements.add(new NodeElement(overbunn, new Point(200, 250), Hold.NONE));
 		/** Slutt på øverste del av node**/
+
 		/**Framsiden av noden**/
 		//Hoved Venstreside
-		elements.add(new LineElement(mainVenstre, new Point(200,560), Hold.TRACE));
+		elements.add(new NodeElement(mainVenstre, new Point(200,560), Hold.NONE));
 		//Hoved Høyreside
-		elements.add(new LineElement(mainHoyre, new Point(600,560), Hold.NONE));
+		elements.add(new NodeElement(mainHoyre, new Point(600,560), Hold.NONE));
 		//Hoved Bunn
-		elements.add(new LineElement(mainBunn, new Point(210,560),Hold.TRACE));
+		elements.add(new NodeElement(mainBunn, new Point(210,560),Hold.TRACE));
 		//Hoved BunnSide
-		elements.add(new LineElement(mainBunnSide, new Point(610,560),Hold.NONE));
+		elements.add(new NodeElement(mainBunnSide, new Point(610,560),Hold.NONE));
 		//Hoved kanten høyreside
-		elements.add(new LineElement(mainKantHoyreSide, new Point(750,450),Hold.TRACE));
+		elements.add(new NodeElement(mainKantHoyreSide, new Point(750,450),Hold.TRACE));
 		/**Slutt på framsiden av noden**/
 
 

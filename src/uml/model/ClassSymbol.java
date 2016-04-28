@@ -16,7 +16,7 @@ public class ClassSymbol extends Figuremodel {
 		// Alle posisjoner og st�rrelser er i virtuelle m�l
 
 		public ClassSymbol(int x, int y) {
-			figureName = "Actor";
+			figureName = "ClassSymbol";
 			start = new Point(x, y);
 			reference = new Point(500, 180);
 

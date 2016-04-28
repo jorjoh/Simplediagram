@@ -2,7 +2,6 @@ package uml.model;
 
 import figure.graphics.*;
 import figure.model.Figuremodel;
-import figure.model.IFigure;
 
 import java.awt.*;
 
