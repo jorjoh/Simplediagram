@@ -35,13 +35,13 @@ public class Node extends Figuremodel{
 
 		/** Øverste del av noden **/
 		// venstreside
-		elements.add(new SquareElement(venstre, new Point(200, 250), Hold.NONE));
+		elements.add(new LineElement(venstre, new Point(200, 250), Hold.NONE));
 		// Øverhoyreside
-		elements.add(new SquareElement(ovrehoyreside, new Point(600, 250), Hold.NONE));
+		elements.add(new LineElement(ovrehoyreside, new Point(600, 250), Hold.NONE));
 		// Øvretopp
-		elements.add(new SquareElement(overtopp, new Point(340, 100), Hold.TRACE));
+		elements.add(new LineElement(overtopp, new Point(340, 100), Hold.TRACE));
 		//Øvrebunn
-		elements.add(new SquareElement(overbunn, new Point(200, 250), Hold.NONE));
+		elements.add(new LineElement(overbunn, new Point(200, 250), Hold.NONE));
 		/** Slutt på øverste del av node**/
 		/**Framsiden av noden**/
 		//Hoved Venstreside

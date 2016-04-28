@@ -15,6 +15,7 @@ import uml.graphics.Thing;
 import uml.model.*;
 import figure.graphics.Figure;
 import figure.model.IFigure;
+import uml.model.Package;
 
 public class Domainview extends JPanel implements IFigure {
 
@@ -29,6 +30,8 @@ public class Domainview extends JPanel implements IFigure {
 		diagram.addFigure(new Business(10, 80));
 		diagram.addFigure(new ClassSymbol(10,130));
 		diagram.addFigure(new Node(10,250));
+		diagram.addFigure(new Package(10,350));
+		diagram.addFigure(new Tab(10,350));
 		setShadow(Shadows.LOW.f());
 		setBackground(Color.WHITE);
 	}

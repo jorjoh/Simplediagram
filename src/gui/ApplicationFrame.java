@@ -14,6 +14,7 @@ public class ApplicationFrame extends Superframe  {
 		setTitle("Figurer og forbindelser");
 		add(centerpane = new Centerpane());
 		setJMenuBar(new MenuController());
+		setSize(1000,560);
 		setVisible(true);
 	}
 
