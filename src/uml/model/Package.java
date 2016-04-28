@@ -32,7 +32,7 @@ public class Package extends Figuremodel {
 		// topp
 		elements.add(new SquareElement(topp, new Point(150, 200), Hold.TRACE));
 
-		elements.add(new TextElement("", LabelAlign.BOTTOM));
+		elements.add(new TextElement("Package", LabelAlign.BOTTOM));
 	}
 
 	protected Figuremodel instance(int x, int y) {

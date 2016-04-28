@@ -36,7 +36,7 @@ public class ClassSymbol extends Figuremodel {
 			// topp
 			elements.add(new SquareElement(topp, new Point(150, 100), Hold.TRACE));
 
-			elements.add(new TextElement("", LabelAlign.BOTTOM));
+			elements.add(new TextElement("ClassSymbol", LabelAlign.BOTTOM));
 		}
 
 		protected Figuremodel instance(int x, int y) {
