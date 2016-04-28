@@ -26,8 +26,14 @@ public class SquareElement extends LineElement {
 		super.realpixels(figscaler);
 		((Line2D.Double) element).setLine(realstart, realstop);
 	}
+
+
 	public void recalculate(){
-		System.out.println("Realstart +realstopp x = "+(realstart.x + realstop.x) );
+		System.out.println("Realstart x = "+(realstart.x));
+		System.out.println("Realstopp x = "+(realstop.x));
+		System.out.println("---------------------------");
+		System.out.println("Realstart y = "+(realstart.y));
+		System.out.println("Realstopp y = "+(realstop.y));
 	}
 
 	public boolean isHot(Point d) {

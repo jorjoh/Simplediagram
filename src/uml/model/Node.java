@@ -1,6 +1,7 @@
 package uml.model;
 
 import figure.graphics.LineElement;
+import figure.graphics.SquareElement;
 import figure.graphics.TextElement;
 import figure.model.Figuremodel;
 
@@ -16,25 +17,46 @@ public class Node extends Figuremodel{
 		start = new Point(x, y);
 		reference = new Point(500, 180);
 
-		Point nedrevenstre = new Point(450, 650);
-		Point ovrehoyreside = new Point(450, 100);
+		/**Start punkter for øverste del av noden**/
+		Point venstre = new Point(340, 110);
+		Point ovrehoyreside = new Point(750, 100);
+		Point overtopp = new Point(730, 100);
+		Point overbunn = new Point(600, 250);
+		virtual = new Dimension(150, 150);
+		/**Slutt på startpunkter på øverste del av noden**/
 
-		Point ovrevenstre = new Point(450, 100);
-		Point nedrehoyre = new Point(650, 380);
+		/**Startpunkter for frontdelen av noden**/
+		Point mainVenstre = new Point(200,250);
+		Point mainHoyre = new Point(600,250);
+		Point mainBunn = new Point(600,560);
+		Point mainBunnSide= new Point(750,450);
+		Point mainKantHoyreSide= new Point(750,120);
+		/**Slutt får start punkter for fronten**/
 
-		virtual = new Dimension(200, 200);
+		/** Øverste del av noden **/
+		// venstreside
+		elements.add(new SquareElement(venstre, new Point(200, 250), Hold.NONE));
+		// Øverhoyreside
+		elements.add(new SquareElement(ovrehoyreside, new Point(600, 250), Hold.NONE));
+		// Øvretopp
+		elements.add(new SquareElement(overtopp, new Point(340, 100), Hold.TRACE));
+		//Øvrebunn
+		elements.add(new SquareElement(overbunn, new Point(200, 250), Hold.NONE));
+		/** Slutt på øverste del av node**/
+		/**Framsiden av noden**/
+		//Hoved Venstreside
+		elements.add(new LineElement(mainVenstre, new Point(200,560), Hold.TRACE));
+		//Hoved Høyreside
+		elements.add(new LineElement(mainHoyre, new Point(600,560), Hold.NONE));
+		//Hoved Bunn
+		elements.add(new LineElement(mainBunn, new Point(210,560),Hold.TRACE));
+		//Hoved BunnSide
+		elements.add(new LineElement(mainBunnSide, new Point(610,560),Hold.NONE));
+		//Hoved kanten høyreside
+		elements.add(new LineElement(mainKantHoyreSide, new Point(750,450),Hold.TRACE));
+		/**Slutt på framsiden av noden**/
 
-		// Ovre venstreside
-		elements.add(new LineElement(nedrevenstre, new Point(200, 350), Hold.NONE));
 
-		// Ovre hoyreside
-		elements.add(new LineElement(ovrehoyreside, new Point(654, 385), Hold.TRACE));
-
-		// Øvre venstreside
-		elements.add(new LineElement(ovrevenstre, new Point(200, 350), Hold.NONE));
-
-		// Nedre høyreside
-		elements.add(new LineElement(nedrehoyre, new Point(450, 650), Hold.NONE));
 
 		elements.add(new TextElement("Node", LabelAlign.BOTTOM));
 	}
