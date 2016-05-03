@@ -23,20 +23,10 @@ public class ComponentLineElement extends LineElement {
 		((Line2D.Double) element).setLine(realstart, realstop);
 	}
 
-
-	public void recalculate(){
-		System.out.println("Realstart x = "+(realstart.x)); //x1
-		System.out.println("Realstopp x = "+(realstop.x)); //x2
-		System.out.println("---------------------------");
-		System.out.println("Realstart y = "+(realstart.y)); //y1
-		System.out.println("Realstopp y = "+(realstop.y));  //y2
-	}
-
 	public boolean isHot(Point d) {
 		return ((Line2D.Double) element).ptLineDist(d) < HOTDISTANCE;
 	}
 	protected ArrayList<Point> traceresult() {
-		//recalculate();
 		ArrayList<Point> q = new ArrayList<Point>();
 		//Hvis verktikal :
 		if(x2-x1 == 0){

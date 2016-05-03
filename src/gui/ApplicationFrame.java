@@ -1,9 +1,9 @@
 package gui;
 
-import java.awt.event.ActionEvent;
-
 import controller.Controller;
 import easylib.gui.Superframe;
+
+import java.awt.event.ActionEvent;
 
 public class ApplicationFrame extends Superframe  {
 
@@ -14,7 +14,7 @@ public class ApplicationFrame extends Superframe  {
 		setTitle("Figurer og forbindelser");
 		add(centerpane = new Centerpane());
 		setJMenuBar(new MenuController());
-		setSize(1000,560);
+		setSize(900,580);
 		setVisible(true);
 	}
 

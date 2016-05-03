@@ -1,10 +1,9 @@
 package figure.graphics;
 
-import java.awt.Point;
-import java.awt.geom.Line2D;
-import java.util.ArrayList;
-
 import figure.model.Scaler;
+
+import java.awt.*;
+import java.awt.geom.Line2D;
 
 public class LineElement extends ConnectElement {
 
@@ -22,10 +21,6 @@ public class LineElement extends ConnectElement {
 
 	public boolean isHot(Point d) {
 		return ((Line2D.Double) element).ptLineDist(d) < HOTDISTANCE;
-	}
-
-	protected ArrayList<Point> traceresult() {
-		return null;
 	}
 
 }

@@ -1,21 +1,15 @@
 package gui.domain;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.event.ActionEvent;
-
-import javax.swing.AbstractButton;
-import javax.swing.JComponent;
-import javax.swing.JPanel;
-import javax.swing.JPopupMenu;
-
+import figure.graphics.Figure;
+import figure.model.IFigure;
 import svg.Svg;
 import uml.graphics.Thing;
 import uml.model.*;
-import figure.graphics.Figure;
-import figure.model.IFigure;
-import uml.model.Package;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.Component;
+import java.awt.event.ActionEvent;
 
 public class Domainview extends JPanel implements IFigure {
 
@@ -27,12 +21,12 @@ public class Domainview extends JPanel implements IFigure {
 		add(diagram);
 		add(sh, BorderLayout.SOUTH);
 		diagram.addFigure(new Actormodel(10, 10));
-		diagram.addFigure(new Business(10, 80));
-		diagram.addFigure(new ClassSymbol(10,130));
-		diagram.addFigure(new Node(10,210));
-		//diagram.addFigure(new Package(10,350));
-		diagram.addFigure(new Tab(10,290));
-		diagram.addFigure(new uml.model.Component(10,370));
+		diagram.addFigure(new Usecasemodel(10, 65));
+		diagram.addFigure(new Business(10, 115));
+		diagram.addFigure(new ClassSymbol(10,160));
+		diagram.addFigure(new Node(10,245));
+		diagram.addFigure(new Tab(10,330));
+		diagram.addFigure(new uml.model.Component(10,420));
 		setShadow(Shadows.LOW.f());
 		setBackground(Color.WHITE);
 	}

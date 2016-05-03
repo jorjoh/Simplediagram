@@ -17,8 +17,6 @@ public class NodeLineElement extends LineElement {
 		virtualstart = a;
 		virtualstop = b;
 		connectionrule = c;
-	//	System.out.println("Virtualstart:" +a.x);
-		//System.out.println("Virtualstop:" +b.y);
 	}
 
 
@@ -27,22 +25,11 @@ public class NodeLineElement extends LineElement {
 		((Line2D.Double) element).setLine(realstart, realstop);
 	}
 
-
-	public void recalculate(){
-		System.out.println("Realstart x = "+(realstart.x));
-		System.out.println("Realstart y = "+(realstart.y));
-		System.out.println("---------------------------");
-		System.out.println("Realstopp x = "+(realstop.x));
-		System.out.println("Realstopp y = "+(realstop.y));
-	}
-
 	public boolean isHot(Point d) {
 		return ((Line2D.Double) element).ptLineDist(d) < HOTDISTANCE;
 	}
 
 	protected ArrayList<Point> traceresult() {
-		//recalculate();
-		//System.out.println("NodeLineElement");
 		ArrayList<Point> q = new ArrayList<Point>();
 		if (connectionrule == Hold.TRACE){
 			//Hvis verktikal :
