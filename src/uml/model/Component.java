@@ -1,8 +1,6 @@
 package uml.model;
 
 import figure.graphics.ComponentLineElement;
-import figure.graphics.LineElement;
-import figure.graphics.SquareElement;
 import figure.graphics.TextElement;
 import figure.model.Figuremodel;
 
@@ -40,7 +38,5 @@ public class Component extends Figuremodel {
 	protected Figuremodel instance(int x, int y) {
 		return new Component(x, y);
 	}
-
-
 
 }

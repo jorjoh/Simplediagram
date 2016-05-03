@@ -18,7 +18,6 @@ public class LineElement extends ConnectElement {
 		((Line2D.Double) element).setLine(realstart, realstop);
 	}
 
-
 	public boolean isHot(Point d) {
 		return ((Line2D.Double) element).ptLineDist(d) < HOTDISTANCE;
 	}

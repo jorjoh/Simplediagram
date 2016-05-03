@@ -37,4 +37,5 @@ public class Package extends Figuremodel {
 	protected Figuremodel instance(int x, int y) {
 		return new Package(x, y);
 	}
+
 }

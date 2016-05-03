@@ -11,13 +11,13 @@ import java.util.ArrayList;
  */
 public class ComponentLineElement extends LineElement {
 
-
 	public ComponentLineElement(Point a, Point b, Hold c) {
 		super(a, b, c);
 		virtualstart = a;
 		virtualstop = b;
 		connectionrule = c;
 	}
+
 	public void realpixels(Scaler figscaler) {
 		super.realpixels(figscaler);
 		((Line2D.Double) element).setLine(realstart, realstop);

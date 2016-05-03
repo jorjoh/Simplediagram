@@ -19,7 +19,6 @@ public class NodeLineElement extends LineElement {
 		connectionrule = c;
 	}
 
-
 	public void realpixels(Scaler figscaler) {
 		super.realpixels(figscaler);
 		((Line2D.Double) element).setLine(realstart, realstop);
@@ -31,7 +30,6 @@ public class NodeLineElement extends LineElement {
 
 	protected ArrayList<Point> traceresult() {
 		ArrayList<Point> q = new ArrayList<Point>();
-		if (connectionrule == Hold.TRACE){
 			//Hvis verktikal :
 			if(x2-x1 == 0){
 				q.add(new Point(realstop.x,((realstart.y+realstop.y)/4)));
@@ -46,8 +44,6 @@ public class NodeLineElement extends LineElement {
 				q.add(new Point(((realstart.x+realstop.x)/4)*3, realstop.y));
 				System.out.println("horisontallinje");
 			}
-
-		}
 		return q;
 	}
 

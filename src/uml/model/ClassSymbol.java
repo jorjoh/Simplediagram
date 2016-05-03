@@ -44,7 +44,3 @@ public class ClassSymbol extends Figuremodel {
 		}
 
 	}
-
-
-
-

@@ -18,7 +18,6 @@ public class SquareElement extends LineElement {
 		connectionrule = c;
 	}
 
-
 	public void realpixels(Scaler figscaler) {
 		super.realpixels(figscaler);
 		((Line2D.Double) element).setLine(realstart, realstop);
@@ -27,6 +26,7 @@ public class SquareElement extends LineElement {
 	public boolean isHot(Point d) {
 		return ((Line2D.Double) element).ptLineDist(d) < HOTDISTANCE;
 	}
+
 	protected ArrayList<Point> traceresult() {
 		ArrayList<Point> q = new ArrayList<Point>();
 		//Hvis verktikal :
