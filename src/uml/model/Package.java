@@ -23,13 +23,13 @@ public class Package extends Figuremodel {
 		virtual = new Dimension(150, 150);
 
 		// venstreside
-		elements.add(new SquareElement(venstre, new Point(130, 200), Hold.TRACE));
+		elements.add(new LineElement(venstre, new Point(130, 200), Hold.FRONT));
 		// hoyreside
-		elements.add(new SquareElement(hoyreside, new Point(900, 800), Hold.TRACE));
+		elements.add(new LineElement(hoyreside, new Point(900, 800), Hold.FRONT));
 		// bunn
-		elements.add(new SquareElement(bunn, new Point(150, 800), Hold.TRACE));
+		elements.add(new LineElement(bunn, new Point(150, 800), Hold.FRONT));
 		// topp
-		elements.add(new SquareElement(topp, new Point(150, 200), Hold.TRACE));
+		elements.add(new LineElement(topp, new Point(150, 200), Hold.FRONT));
 
 		elements.add(new TextElement("Package", LabelAlign.BOTTOM));
 	}

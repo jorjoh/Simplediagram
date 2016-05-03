@@ -26,13 +26,13 @@ public class Tab extends Package {
 		virtual = new Dimension(150, 150);
 
 		// venstreside
-		elements.add(new SquareElement(venstre, new Point(130, 100), Hold.TRACE));
+		elements.add(new LineElement(venstre, new Point(130, 100), Hold.FRONT));
 		// hoyreside
-		elements.add(new SquareElement(hoyreside, new Point(450, 200), Hold.TRACE));
+		elements.add(new LineElement(hoyreside, new Point(450, 200), Hold.FRONT));
 		// bunn
-		elements.add(new SquareElement(bunn, new Point(150, 200), Hold.TRACE));
+		elements.add(new LineElement(bunn, new Point(150, 200), Hold.NONE));
 		// topp
-		elements.add(new SquareElement(topp, new Point(150, 100), Hold.TRACE));
+		elements.add(new LineElement(topp, new Point(150, 100), Hold.FRONT));
 
 		elements.add(new TextElement("", LabelAlign.BOTTOM));
 	}

@@ -29,25 +29,34 @@ public class SquareElement extends LineElement {
 
 
 	public void recalculate(){
-		System.out.println("Realstart x = "+(realstart.x));
-		System.out.println("Realstopp x = "+(realstop.x));
+		System.out.println("Realstart x = "+(realstart.x)); //x1
+		System.out.println("Realstopp x = "+(realstop.x)); //x2
 		System.out.println("---------------------------");
-		System.out.println("Realstart y = "+(realstart.y));
-		System.out.println("Realstopp y = "+(realstop.y));
+		System.out.println("Realstart y = "+(realstart.y)); //y1
+		System.out.println("Realstopp y = "+(realstop.y));  //y2
 	}
 
 	public boolean isHot(Point d) {
 		return ((Line2D.Double) element).ptLineDist(d) < HOTDISTANCE;
 	}
 	protected ArrayList<Point> traceresult() {
-	//	recalculate();
+		//recalculate();
 		ArrayList<Point> q = new ArrayList<Point>();
-		if (connectionrule == Hold.TRACE){
-			//q.add(new Point(25,10));
-			//Toppen
-			q.add(new Point(((realstart.x + realstop.x)/3),realstart.y));
-			q.add(new Point(((realstart.x + realstop.x)/2),realstart.y));
-			q.add(new Point(((realstart.x + realstop.x)) - virtualstop.x,realstart.y));
+		//Hvis verktikal :
+		if(x2-x1 == 0){
+			q.add(new Point(realstop.x,((realstart.y+realstop.y)/3)));
+			q.add(new Point(realstop.x,((realstart.y+realstop.y)/3)*2));
+			System.out.println("vertikallinje");
+		}
+		//Hvis horisontal
+		if(y2-y1 == 0){
+			q.add(new Point(((realstart.x+realstop.x)/3), realstop.y));
+			q.add(new Point(((realstart.x+realstop.x)/3)*2, realstop.y));
+			System.out.println("horisontallinje");
+		}
+
+			//q.add(new Point((realstart.x+realstop.x)/3, realstop.y));
+			//q.add(new Point(((realstart.x + realstop.x)/3),realstart.y));
 			//Høyreside
 			//q.add(new Point(70,35));
 			//q.add(new Point(70,60));
@@ -55,10 +64,6 @@ public class SquareElement extends LineElement {
 			//q.add(new Point(20,35));
 			//q.add(new Point(20,60));
 			//Bunnen
-			q.add(new Point(((realstart.x + realstop.x)/3),realstart.y));
-			q.add(new Point(((realstart.x + realstop.x)/3)*2,realstart.y));
-
-		}
 		return q;
 	}
 }

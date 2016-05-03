@@ -41,7 +41,7 @@ public class NodeElement extends LineElement {
 	}
 
 	protected ArrayList<Point> traceresult() {
-		recalculate();
+		//recalculate();
 		//System.out.println("NodeElement");
 		ArrayList<Point> q = new ArrayList<Point>();
 		if (connectionrule == Hold.TRACE){

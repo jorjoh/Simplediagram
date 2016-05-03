@@ -27,11 +27,11 @@ public class Component extends Figuremodel {
 		// venstreside
 		elements.add(new LineElement(venstre, new Point(50, 200), Hold.NONE));
 		// hoyreside
-		elements.add(new LineElement(hoyreside, new Point(900, 800), Hold.TRACE));
+		elements.add(new LineElement(hoyreside, new Point(900, 800), Hold.FRONT));
 		// bunn
-		elements.add(new LineElement(bunn, new Point(50, 800), Hold.TRACE));
+		elements.add(new LineElement(bunn, new Point(50, 800), Hold.NONE));
 		// topp
-		elements.add(new LineElement(topp, new Point(50, 200), Hold.TRACE));
+		elements.add(new LineElement(topp, new Point(50, 200), Hold.NONE));
 
 		elements.add(new TextElement("Component", LabelAlign.BOTTOM));
 	}

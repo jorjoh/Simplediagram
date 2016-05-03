@@ -25,11 +25,7 @@ public class LineElement extends ConnectElement {
 	}
 
 	protected ArrayList<Point> traceresult() {
-		ArrayList<Point> q = new ArrayList<Point>();
-		if (connectionrule == Hold.TRACE){
-			System.out.println("NodeElement");
-		}
-		return q;
+		return null;
 	}
 
 }
