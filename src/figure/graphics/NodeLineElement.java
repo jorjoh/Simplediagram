@@ -45,9 +45,6 @@ public class NodeLineElement extends LineElement {
 				System.out.println("horisontallinje");
 <<<<<<< HEAD
 			}*/
-=======
-			}
->>>>>>> edf9a72f547a91151ac0a5186db3666b5b7eef2d
 		return q;
 	}
 

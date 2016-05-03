@@ -1,11 +1,9 @@
 package uml.model;
 
-<<<<<<< HEAD
-import figure.graphics.*;
-=======
+
 import figure.graphics.ComponentLineElement;
+import figure.graphics.EllipseElement;
 import figure.graphics.TextElement;
->>>>>>> edf9a72f547a91151ac0a5186db3666b5b7eef2d
 import figure.model.Figuremodel;
 
 import java.awt.*;
