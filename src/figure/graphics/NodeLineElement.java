@@ -10,9 +10,9 @@ import java.util.ArrayList;
 /**
  * Created by Jørgen Johansen on 28.04.2016.
  */
-public class NodeElement extends LineElement {
+public class NodeLineElement extends LineElement {
 
-	public NodeElement(Point a, Point b, Hold c) {
+	public NodeLineElement(Point a, Point b, Hold c) {
 		super(a,b,c);
 		virtualstart = a;
 		virtualstop = b;
@@ -42,16 +42,23 @@ public class NodeElement extends LineElement {
 
 	protected ArrayList<Point> traceresult() {
 		//recalculate();
-		//System.out.println("NodeElement");
+		//System.out.println("NodeLineElement");
 		ArrayList<Point> q = new ArrayList<Point>();
 		if (connectionrule == Hold.TRACE){
-
-			q.add(new Point(((realstart.x - realstop.x)+realstart.x),realstop.y-realstart.y));
-			q.add(new Point((((realstart.x - realstop.x)+realstart.x)/4),realstop.y-realstart.y));
-			q.add(new Point((((realstart.x - realstop.x)+realstart.x)/4),(realstop.y-realstart.y)+realstart.y));
-			q.add(new Point((((realstart.x - realstop.x)+realstart.x)/4),(realstop.y-realstart.y)+realstart.y+realstart.y));
-
-
+			//Hvis verktikal :
+			if(x2-x1 == 0){
+				q.add(new Point(realstop.x,((realstart.y+realstop.y)/4)));
+				q.add(new Point(realstop.x,((realstart.y+realstop.y)/4)*2));
+				q.add(new Point(realstop.x,((realstart.y+realstop.y)/4)*3));
+				System.out.println("vertikallinje");
+			}
+			//Hvis horisontal
+			if(y2-y1 == 0){
+				q.add(new Point(((realstart.x+realstop.x)/4), realstop.y));
+				q.add(new Point(((realstart.x+realstop.x)/4)*2, realstop.y));
+				q.add(new Point(((realstart.x+realstop.x)/4)*3, realstop.y));
+				System.out.println("horisontallinje");
+			}
 
 		}
 		return q;
