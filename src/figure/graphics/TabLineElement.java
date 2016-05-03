@@ -1,5 +1,6 @@
 package figure.graphics;
 
+import figure.model.IFigure;
 import figure.model.Scaler;
 
 import java.awt.*;
@@ -9,15 +10,18 @@ import java.util.ArrayList;
 /**
  * Created by Jørgen Johansen on 03.05.2016.
  */
-public class ComponentLineElement extends LineElement {
+public class TabLineElement extends LineElement {
 
-
-	public ComponentLineElement(Point a, Point b, Hold c) {
-		super(a, b, c);
+	public TabLineElement(Point a, Point b, IFigure.Hold c) {
+		super(a,b,c);
 		virtualstart = a;
 		virtualstop = b;
 		connectionrule = c;
+		//System.out.println("Virtualstart:" +a.x);
+		//System.out.println("Virtualstop:" +b.y);
 	}
+
+
 	public void realpixels(Scaler figscaler) {
 		super.realpixels(figscaler);
 		((Line2D.Double) element).setLine(realstart, realstop);
@@ -41,15 +45,14 @@ public class ComponentLineElement extends LineElement {
 		//Hvis verktikal :
 		if(x2-x1 == 0){
 			q.add(new Point(realstop.x,((realstart.y+realstop.y)/2)));
-
-			//System.out.println("vertikallinje");
+			System.out.println("vertikallinje");
 		}
 		//Hvis horisontal
 		if(y2-y1 == 0){
 			q.add(new Point(((realstart.x+realstop.x)/2), realstop.y));
-
-			//System.out.println("horisontallinje");
+			System.out.println("horisontallinje");
 		}
 		return q;
 	}
+
 }

@@ -14,7 +14,7 @@ public class EllipseElement extends Element {
 	public EllipseElement(Point a, Point b, Hold c) {
 		element = new Ellipse2D.Double();
 		connectionrule = c;
-		virtualstart = new Point(a.x - (b.x / 2), a.y - (b.y));
+		virtualstart = new Point(a.x - (b.x/2), a.y - (b.y));
 		virtualstop = b;
 	}
 

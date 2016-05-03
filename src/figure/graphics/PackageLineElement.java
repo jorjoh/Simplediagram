@@ -1,6 +1,8 @@
 package figure.graphics;
 
+import figure.model.IFigure;
 import figure.model.Scaler;
+import javafx.scene.shape.Line;
 
 import java.awt.*;
 import java.awt.geom.Line2D;
@@ -9,20 +11,21 @@ import java.util.ArrayList;
 /**
  * Created by Jørgen Johansen on 03.05.2016.
  */
-public class ComponentLineElement extends LineElement {
+public class PackageLineElement extends LineElement {
 
-
-	public ComponentLineElement(Point a, Point b, Hold c) {
-		super(a, b, c);
+	public PackageLineElement(Point a, Point b, IFigure.Hold c) {
+		super(a,b,c);
 		virtualstart = a;
 		virtualstop = b;
 		connectionrule = c;
+		//System.out.println("Virtualstart:" +a.x);
+		//System.out.println("Virtualstop:" +b.y);
 	}
+
 	public void realpixels(Scaler figscaler) {
 		super.realpixels(figscaler);
 		((Line2D.Double) element).setLine(realstart, realstop);
 	}
-
 
 	public void recalculate(){
 		System.out.println("Realstart x = "+(realstart.x)); //x1
@@ -52,4 +55,5 @@ public class ComponentLineElement extends LineElement {
 		}
 		return q;
 	}
+
 }

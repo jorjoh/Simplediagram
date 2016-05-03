@@ -57,7 +57,6 @@ public class Node extends Figuremodel{
 		elements.add(new NodeLineElement(overbunn, new Point(200, 250), Hold.NONE));
 		/** Slutt på øverste del av node**/
 
-
 		elements.add(new TextElement("Node", LabelAlign.BOTTOM));
 	}
 
