@@ -16,7 +16,6 @@ public class Node extends Figuremodel{
 		start = new Point(x, y);
 		reference = new Point(500, 180);
 
-
 		/**Startpunkter for frontdelen av noden**/
 		Point frontvenstreside = new Point(200,250);
 		Point fronthoyreside = new Point(600,250);
@@ -63,4 +62,5 @@ public class Node extends Figuremodel{
 	protected Figuremodel instance(int x, int y) {
 		return new Node(x, y);
 	}
+
 }

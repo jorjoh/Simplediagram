@@ -17,23 +17,11 @@ public class NodeLineElement extends LineElement {
 		virtualstart = a;
 		virtualstop = b;
 		connectionrule = c;
-	//	System.out.println("Virtualstart:" +a.x);
-		//System.out.println("Virtualstop:" +b.y);
 	}
-
 
 	public void realpixels(Scaler figscaler) {
 		super.realpixels(figscaler);
 		((Line2D.Double) element).setLine(realstart, realstop);
-	}
-
-
-	public void recalculate(){
-		System.out.println("Realstart x = "+(realstart.x));
-		System.out.println("Realstart y = "+(realstart.y));
-		System.out.println("---------------------------");
-		System.out.println("Realstopp x = "+(realstop.x));
-		System.out.println("Realstopp y = "+(realstop.y));
 	}
 
 	public boolean isHot(Point d) {
@@ -41,8 +29,6 @@ public class NodeLineElement extends LineElement {
 	}
 
 	protected ArrayList<Point> traceresult() {
-		//recalculate();
-		//System.out.println("NodeLineElement");
 		ArrayList<Point> q = new ArrayList<Point>();
 			//Hvis verktikal :
 			if(x2-x1 == 0){
@@ -57,7 +43,11 @@ public class NodeLineElement extends LineElement {
 				q.add(new Point(((realstart.x+realstop.x)/4)*2, realstop.y));
 				q.add(new Point(((realstart.x+realstop.x)/4)*3, realstop.y));
 				System.out.println("horisontallinje");
+<<<<<<< HEAD
 			}*/
+=======
+			}
+>>>>>>> edf9a72f547a91151ac0a5186db3666b5b7eef2d
 		return q;
 	}
 
