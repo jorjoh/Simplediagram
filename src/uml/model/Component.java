@@ -16,7 +16,7 @@ public class Component extends Figuremodel {
 	public Component(int x, int y) {
 		figureName = "Component";
 		start = new Point(x, y);
-		reference = new Point(500, 180);
+		reference = new Point(150, 180);
 
 		Point venstre = new Point(50, 800);
 		Point hoyreside = new Point(900, 200);
@@ -31,11 +31,23 @@ public class Component extends Figuremodel {
 		//Smallcomponent
 		Point compvenstre = new Point(800, 300);
 		Point comphoyre = new Point(870, 300);
-
 		Point compbunn = new Point(800, 500);
-		Point comptopp = new Point(370, 600);
+		Point comptopp = new Point(800, 300);
 
-		virtual = new Dimension(800, 800);
+		//Smallcomponent1
+		Point smallcompvenstre = new Point(830, 350);
+		Point smallcomphoyre = new Point(770, 350);
+		Point smallcompbunn = new Point(770, 380);
+		Point smallcomptopp = new Point(770, 350);
+
+		//Smallcomponent2
+		Point smallcomp2venstre = new Point(830, 430);
+		Point smallcomp2hoyre = new Point(770, 430);
+		Point smallcomp2bunn = new Point(770, 430);
+		Point smallcomp2topp = new Point(770, 400);
+
+
+		virtual = new Dimension(200, 200);
 
 		// venstreside
 		elements.add(new ComponentLineElement(venstre, new Point(50, 200), Hold.TRACE));
@@ -64,9 +76,21 @@ public class Component extends Figuremodel {
 		elements.add(new ComponentLineElement(compvenstre,new Point(800,500),Hold.NONE));
 		elements.add(new ComponentLineElement(comphoyre,new Point(870,500),Hold.NONE));
 		elements.add(new ComponentLineElement(compbunn,new Point(870,500),Hold.NONE));
-		elements.add(new ComponentLineElement(comptopp,new Point(370,600),Hold.NONE));
-
+		elements.add(new ComponentLineElement(comptopp,new Point(870,300),Hold.TRACE));
 		/** Øverste del av noden **/
+
+		/**SmalerComponent1**/
+		elements.add(new ComponentLineElement(smallcompvenstre,new Point(830,380),Hold.NONE));
+		elements.add(new ComponentLineElement(smallcomphoyre,new Point(770,380),Hold.NONE));
+		elements.add(new ComponentLineElement(smallcompbunn,new Point(830,380),Hold.NONE));
+		elements.add(new ComponentLineElement(smallcomptopp,new Point(830,350),Hold.TRACE));
+		/**EndOfSmlaerComponent1**/
+		/**SmalerComponent2**/
+		elements.add(new ComponentLineElement(smallcomp2venstre,new Point(830,400),Hold.NONE));
+		elements.add(new ComponentLineElement(smallcomp2hoyre,new Point(770,400),Hold.NONE));
+		elements.add(new ComponentLineElement(smallcomp2bunn,new Point(830,430),Hold.NONE));
+		elements.add(new ComponentLineElement(smallcomp2topp,new Point(830,400),Hold.TRACE));
+		/**EndOfSmlaerComponent2**/
 		elements.add(new TextElement("Component", LabelAlign.CENTER));
 	}
 
