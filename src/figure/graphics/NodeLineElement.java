@@ -38,13 +38,12 @@ public class NodeLineElement extends LineElement {
 				//System.out.println("vertikallinje");
 			}
 			//Hvis horisontal
-			/*if(y2-y1 == 0){
-				q.add(new Point(((realstart.x+realstop.x)/4), realstop.y));
+			if(y2-y1 == 0){
+				q.add(new Point((realstart.x + realstop.x)/4, realstop.y));
 				q.add(new Point(((realstart.x+realstop.x)/4)*2, realstop.y));
 				q.add(new Point(((realstart.x+realstop.x)/4)*3, realstop.y));
-				System.out.println("horisontallinje");
-<<<<<<< HEAD
-			}*/
+				//System.out.println("horisontallinje");
+			}
 		return q;
 	}
 

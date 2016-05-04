@@ -45,12 +45,12 @@ public class TabLineElement extends LineElement {
 		//Hvis verktikal :
 		if(x2-x1 == 0){
 			q.add(new Point(realstop.x,((realstart.y+realstop.y)/2)));
-			System.out.println("vertikallinje");
+			//System.out.println("vertikallinje");
 		}
 		//Hvis horisontal
 		if(y2-y1 == 0){
 			q.add(new Point(((realstart.x+realstop.x)/2), realstop.y));
-			System.out.println("horisontallinje");
+			//System.out.println("horisontallinje");
 		}
 		return q;
 	}
