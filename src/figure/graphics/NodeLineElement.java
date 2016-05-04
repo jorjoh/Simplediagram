@@ -24,37 +24,26 @@ public class NodeLineElement extends LineElement {
 		((Line2D.Double) element).setLine(realstart, realstop);
 	}
 
-	public void recalculate(){
-		System.out.println("Realstart x = "+(realstart.x)); //x1
-		System.out.println("Realstopp x = "+(realstop.x)); //x2
-
-		System.out.println("Realstart y = "+(realstart.y)); //y1
-		System.out.println("Realstopp y = "+(realstop.y));  //y2
-		System.out.println("---------------------------");
-	}
-
 	public boolean isHot(Point d) {
 		return ((Line2D.Double) element).ptLineDist(d) < HOTDISTANCE;
 	}
 
 	protected ArrayList<Point> traceresult() {
 		ArrayList<Point> q = new ArrayList<Point>();
-		recalculate();
-			//Hvis verktikal :
-			if(x2-x1 == 0){
-				q.add(new Point(realstop.x,((realstart.y+realstop.y)/4)));
-				q.add(new Point(realstop.x,((realstart.y+realstop.y)/4)*2));
-				q.add(new Point(realstop.x,((realstart.y+realstop.y)/4)*3));
-				System.out.println("vertikallinje");
-
-			}
-			//Hvis horisontal
-			if(y2-y1 == 0){
-				q.add(new Point(((realstart.x+realstop.x)/4), realstop.y));
-				q.add(new Point((((realstart.x+realstop.x)/4)*2), realstop.y));
-				q.add(new Point((((realstart.x+realstop.x)/4)*3), realstop.y));
-				System.out.println("horisontallinje");
-			}
+		//Hvis verktikal :
+		if(x2-x1 == 0){
+			q.add(new Point(realstop.x,((realstart.y+realstop.y)/4)));
+			q.add(new Point(realstop.x,((realstart.y+realstop.y)/4)*2));
+			q.add(new Point(realstop.x,((realstart.y+realstop.y)/4)*3));
+			//System.out.println("vertikallinje");
+		}
+		//Hvis horisontal
+		if(y2-y1 == 0){
+			q.add(new Point((realstart.x + realstop.x)/4, realstop.y));
+			q.add(new Point(((realstart.x+realstop.x)/4)*2, realstop.y));
+			q.add(new Point(((realstart.x+realstop.x)/4)*3, realstop.y));
+			//System.out.println("horisontallinje");
+		}
 		return q;
 	}
 
