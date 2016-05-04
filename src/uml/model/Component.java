@@ -27,7 +27,15 @@ public class Component extends Figuremodel {
 		Point strek1 = new Point(350,200);
 		Point strek2 = new Point(650,200);
 		Point strek3under = new Point(500,910);
-		virtual = new Dimension(500, 200);
+
+		//Smallcomponent
+		Point compvenstre = new Point(800, 300);
+		Point comphoyre = new Point(870, 300);
+
+		Point compbunn = new Point(800, 500);
+		Point comptopp = new Point(370, 600);
+
+		virtual = new Dimension(800, 800);
 
 		// venstreside
 		elements.add(new ComponentLineElement(venstre, new Point(50, 200), Hold.TRACE));
@@ -51,6 +59,14 @@ public class Component extends Figuremodel {
 				Hold.TRACE));
 		elements.add(new EllipseElement(new Point(500, 1010), new Point(70, 90),
 				Hold.NONE));
+
+		/**End of small component**/
+		elements.add(new ComponentLineElement(compvenstre,new Point(800,500),Hold.NONE));
+		elements.add(new ComponentLineElement(comphoyre,new Point(870,500),Hold.NONE));
+		elements.add(new ComponentLineElement(compbunn,new Point(870,500),Hold.NONE));
+		elements.add(new ComponentLineElement(comptopp,new Point(370,600),Hold.NONE));
+
+		/** Øverste del av noden **/
 		elements.add(new TextElement("Component", LabelAlign.CENTER));
 	}
 
