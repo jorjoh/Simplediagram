@@ -72,24 +72,24 @@ public class Component extends Figuremodel {
 		elements.add(new EllipseElement(new Point(500, 1010), new Point(70, 90),
 				Hold.NONE));
 
-		/**End of small component**/
+		/** Smallcomponent **/
 		elements.add(new ComponentLineElement(compvenstre,new Point(800,500),Hold.NONE));
 		elements.add(new ComponentLineElement(comphoyre,new Point(870,500),Hold.NONE));
 		elements.add(new ComponentLineElement(compbunn,new Point(870,500),Hold.NONE));
-		elements.add(new ComponentLineElement(comptopp,new Point(870,300),Hold.TRACE));
-		/** Øverste del av noden **/
+		elements.add(new ComponentLineElement(comptopp,new Point(870,300),Hold.NONE));
+		/**End of small component**/
 
 		/**SmalerComponent1**/
 		elements.add(new ComponentLineElement(smallcompvenstre,new Point(830,380),Hold.NONE));
 		elements.add(new ComponentLineElement(smallcomphoyre,new Point(770,380),Hold.NONE));
 		elements.add(new ComponentLineElement(smallcompbunn,new Point(830,380),Hold.NONE));
-		elements.add(new ComponentLineElement(smallcomptopp,new Point(830,350),Hold.TRACE));
+		elements.add(new ComponentLineElement(smallcomptopp,new Point(830,350),Hold.NONE));
 		/**EndOfSmlaerComponent1**/
 		/**SmalerComponent2**/
 		elements.add(new ComponentLineElement(smallcomp2venstre,new Point(830,400),Hold.NONE));
 		elements.add(new ComponentLineElement(smallcomp2hoyre,new Point(770,400),Hold.NONE));
 		elements.add(new ComponentLineElement(smallcomp2bunn,new Point(830,430),Hold.NONE));
-		elements.add(new ComponentLineElement(smallcomp2topp,new Point(830,400),Hold.TRACE));
+		elements.add(new ComponentLineElement(smallcomp2topp,new Point(830,400),Hold.NONE));
 		/**EndOfSmlaerComponent2**/
 		elements.add(new TextElement("Component", LabelAlign.CENTER));
 	}
