@@ -1,6 +1,6 @@
 # Simplediagram
 SDP-3000
-Eksamen i Software Design Patterns - Simplediagram Våren 2016
+Eksamen i Software Design Patterns Våren 2016 - Simplediagram 
 
 * Husk å fjerne .gitignore ved innlevering
 * Fjerne utskrifter (System.out.println) fra koden da dette forstyrrer koden??!
