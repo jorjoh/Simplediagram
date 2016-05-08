@@ -6,210 +6,247 @@
     <g id="Actor_1">
         <g id="line_1">
             <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="125.0" x2="110.0" y1="61.0" y2="75.0"/>
+                x1="443.0" x2="428.0" y1="302.0" y2="316.0"/>
         </g>
         <g id="line_2">
             <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="125.0" x2="140.0" y1="61.0" y2="75.0"/>
+                x1="443.0" x2="458.0" y1="302.0" y2="316.0"/>
         </g>
         <g id="line_3">
             <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="125.0" x2="125.0" y1="59.0" y2="74.0"/>
+                x1="443.0" x2="443.0" y1="300.0" y2="315.0"/>
         </g>
         <g id="line_4">
             <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="125.0" x2="118.0" y1="74.0" y2="85.0"/>
+                x1="443.0" x2="436.0" y1="315.0" y2="326.0"/>
         </g>
         <g id="line_5">
             <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="125.0" x2="133.0" y1="74.0" y2="85.0"/>
+                x1="443.0" x2="451.0" y1="315.0" y2="326.0"/>
         </g>
         <g id="ellipse_1">
-            <ellipse cx="125.0" cy="55.0" rx="4.0" ry="4.0" style="fill:none; stroke:black; stroke-width:1;"/>
+            <ellipse cx="443.0" cy="296.0" rx="4.0" ry="4.0" style="fill:none; stroke:black; stroke-width:1;"/>
         </g>
         <g id="text_1">
-            <text style="font-size:11px" x="109" y="97">Bruker</text>
+            <text style="font-size:11px" x="427" y="338">Bruker</text>
         </g>
     </g>
     <g id="Usecase_1">
         <g id="ellipse_2">
-            <ellipse cx="345.5" cy="20.5" rx="34.5" ry="18.5" style="fill:none; stroke:black; stroke-width:1;"/>
+            <ellipse cx="47.5" cy="85.5" rx="34.5" ry="18.5" style="fill:none; stroke:black; stroke-width:1;"/>
         </g>
         <g id="text_2">
-            <text style="font-size:11px" x="318" y="23">Brukstilfelle</text>
-        </g>
-    </g>
-    <g id="Actor_2">
-        <g id="line_6">
-            <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="76.0" x2="76.0" y1="283.0" y2="223.0"/>
-        </g>
-        <g id="line_7">
-            <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="131.0" x2="131.0" y1="223.0" y2="283.0"/>
-        </g>
-        <g id="line_8">
-            <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="131.0" x2="76.0" y1="283.0" y2="283.0"/>
-        </g>
-        <g id="line_9">
-            <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="131.0" x2="76.0" y1="223.0" y2="223.0"/>
-        </g>
-        <g id="text_3">
-            <text style="font-size:11px" x="80" y="310">ClassSymbol</text>
-        </g>
-    </g>
-    <g id="Actor_3">
-        <g id="line_10">
-            <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="388.0" x2="388.0" y1="180.0" y2="120.0"/>
-        </g>
-        <g id="line_11">
-            <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="443.0" x2="443.0" y1="120.0" y2="180.0"/>
-        </g>
-        <g id="line_12">
-            <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="443.0" x2="388.0" y1="180.0" y2="180.0"/>
-        </g>
-        <g id="line_13">
-            <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="443.0" x2="388.0" y1="120.0" y2="120.0"/>
-        </g>
-        <g id="text_4">
-            <text style="font-size:11px" x="389" y="207">ClassSymbol2</text>
-        </g>
-    </g>
-    <g id="Actor_4">
-        <g id="line_14">
-            <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="791.0" x2="766.0" y1="73.0" y2="43.0"/>
-        </g>
-        <g id="line_15">
-            <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="791.0" x2="811.0" y1="18.0" y2="47.0"/>
-        </g>
-        <g id="line_16">
-            <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="791.0" x2="766.0" y1="18.0" y2="43.0"/>
-        </g>
-        <g id="line_17">
-            <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="811.0" x2="791.0" y1="46.0" y2="73.0"/>
-        </g>
-        <g id="text_5">
-            <text style="font-size:11px" x="784" y="105">Node</text>
+            <text style="font-size:11px" x="20" y="88">Brukstilfelle</text>
         </g>
     </g>
     <g id="Usecase_2">
         <g id="ellipse_3">
-            <ellipse cx="208.5" cy="124.5" rx="34.5" ry="18.5" style="fill:none; stroke:black; stroke-width:1;"/>
+            <ellipse cx="47.5" cy="135.5" rx="34.5" ry="18.5" style="fill:none; stroke:black; stroke-width:1;"/>
+        </g>
+        <g id="text_3">
+            <text style="font-size:11px" x="20" y="138">Brukstilfelle</text>
+        </g>
+        <g id="line_6">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="48.0" x2="81.0" y1="153.0" y2="135.0"/>
+        </g>
+    </g>
+    <g id="ClassSymbol_1">
+        <g id="line_7">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="21.0" x2="21.0" y1="213.0" y2="168.0"/>
+        </g>
+        <g id="line_8">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="63.0" x2="63.0" y1="168.0" y2="213.0"/>
+        </g>
+        <g id="line_9">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="63.0" x2="21.0" y1="213.0" y2="213.0"/>
+        </g>
+        <g id="line_10">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="63.0" x2="21.0" y1="168.0" y2="168.0"/>
+        </g>
+        <g id="text_4">
+            <text style="font-size:11px" x="16" y="232">ClassSymbol</text>
+        </g>
+    </g>
+    <g id="Node_1">
+        <g id="line_11">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="324.0" x2="324.0" y1="262.0" y2="202.0"/>
+        </g>
+        <g id="line_12">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="369.0" x2="369.0" y1="262.0" y2="202.0"/>
+        </g>
+        <g id="line_13">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="369.0" x2="324.0" y1="262.0" y2="262.0"/>
+        </g>
+        <g id="line_14">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="369.0" x2="379.0" y1="262.0" y2="238.0"/>
+        </g>
+        <g id="line_15">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="379.0" x2="379.0" y1="185.0" y2="238.0"/>
+        </g>
+        <g id="line_16">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="324.0" x2="334.0" y1="202.0" y2="185.0"/>
+        </g>
+        <g id="line_17">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="369.0" x2="379.0" y1="202.0" y2="185.0"/>
+        </g>
+        <g id="line_18">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="334.0" x2="379.0" y1="185.0" y2="185.0"/>
+        </g>
+        <g id="line_19">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="324.0" x2="369.0" y1="202.0" y2="202.0"/>
+        </g>
+        <g id="text_5">
+            <text style="font-size:11px" x="357" y="279">Node</text>
+        </g>
+    </g>
+    <g id="Package_1">
+        <g id="line_20">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="20.0" x2="20.0" y1="410.0" y2="365.0"/>
+        </g>
+        <g id="line_21">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="78.0" x2="78.0" y1="365.0" y2="410.0"/>
+        </g>
+        <g id="line_22">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="78.0" x2="21.0" y1="410.0" y2="410.0"/>
+        </g>
+        <g id="line_23">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="78.0" x2="21.0" y1="365.0" y2="365.0"/>
         </g>
         <g id="text_6">
-            <text style="font-size:11px" x="181" y="127">Brukstilfelle</text>
+            <text style="font-size:11px" x="27" y="422">Package</text>
         </g>
-    </g>
-    <g id="Usecase_3">
-        <g id="ellipse_4">
-            <ellipse cx="200.5" cy="165.5" rx="34.5" ry="18.5" style="fill:none; stroke:black; stroke-width:1;"/>
+        <g id="line_24">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="20.0" x2="20.0" y1="365.0" y2="358.0"/>
+        </g>
+        <g id="line_25">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="44.0" x2="44.0" y1="358.0" y2="365.0"/>
+        </g>
+        <g id="line_26">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="44.0" x2="21.0" y1="365.0" y2="365.0"/>
+        </g>
+        <g id="line_27">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="44.0" x2="21.0" y1="358.0" y2="358.0"/>
         </g>
         <g id="text_7">
-            <text style="font-size:11px" x="173" y="168">Brukstilfelle</text>
+            <text style="font-size:11px" x="47" y="422"/>
         </g>
     </g>
-    <g id="Usecase_4">
+    <g id="Component_1">
+        <g id="line_28">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="15.0" x2="15.0" y1="500.0" y2="440.0"/>
+        </g>
+        <g id="line_29">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="100.0" x2="100.0" y1="440.0" y2="500.0"/>
+        </g>
+        <g id="line_30">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="100.0" x2="15.0" y1="500.0" y2="500.0"/>
+        </g>
+        <g id="line_31">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="100.0" x2="15.0" y1="440.0" y2="440.0"/>
+        </g>
+        <g id="line_32">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="45.0" x2="45.0" y1="440.0" y2="431.0"/>
+        </g>
+        <g id="line_33">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="75.0" x2="75.0" y1="440.0" y2="431.0"/>
+        </g>
+        <g id="line_34">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="60.0" x2="60.0" y1="511.0" y2="500.0"/>
+        </g>
+        <g id="ellipse_4">
+            <ellipse cx="45.5" cy="425.5" rx="3.5" ry="4.5" style="fill:none; stroke:black; stroke-width:1;"/>
+        </g>
         <g id="ellipse_5">
-            <ellipse cx="376.5" cy="351.5" rx="34.5" ry="18.5" style="fill:none; stroke:black; stroke-width:1;"/>
+            <ellipse cx="75.5" cy="425.5" rx="3.5" ry="4.5" style="fill:none; stroke:black; stroke-width:1;"/>
+        </g>
+        <g id="ellipse_6">
+            <ellipse cx="60.5" cy="516.5" rx="3.5" ry="4.5" style="fill:none; stroke:black; stroke-width:1;"/>
+        </g>
+        <g id="line_35">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="90.0" x2="90.0" y1="450.0" y2="470.0"/>
+        </g>
+        <g id="line_36">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="97.0" x2="97.0" y1="450.0" y2="470.0"/>
+        </g>
+        <g id="line_37">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="90.0" x2="97.0" y1="470.0" y2="470.0"/>
+        </g>
+        <g id="line_38">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="90.0" x2="97.0" y1="450.0" y2="450.0"/>
+        </g>
+        <g id="line_39">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="93.0" x2="93.0" y1="455.0" y2="458.0"/>
+        </g>
+        <g id="line_40">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="87.0" x2="87.0" y1="455.0" y2="458.0"/>
+        </g>
+        <g id="line_41">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="87.0" x2="93.0" y1="458.0" y2="458.0"/>
+        </g>
+        <g id="line_42">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="87.0" x2="93.0" y1="455.0" y2="455.0"/>
+        </g>
+        <g id="line_43">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="93.0" x2="93.0" y1="463.0" y2="460.0"/>
+        </g>
+        <g id="line_44">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="87.0" x2="87.0" y1="463.0" y2="460.0"/>
+        </g>
+        <g id="line_45">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="87.0" x2="93.0" y1="463.0" y2="463.0"/>
+        </g>
+        <g id="line_46">
+            <line style="fill:none; stroke:black; stroke-width:1;"
+                x1="87.0" x2="93.0" y1="460.0" y2="460.0"/>
         </g>
         <g id="text_8">
-            <text style="font-size:11px" x="349" y="354">Brukstilfelle</text>
-        </g>
-    </g>
-    <g id="Usecase_5">
-        <g id="ellipse_6">
-            <ellipse cx="473.5" cy="323.5" rx="34.5" ry="18.5" style="fill:none; stroke:black; stroke-width:1;"/>
-        </g>
-        <g id="text_9">
-            <text style="font-size:11px" x="446" y="326">Brukstilfelle</text>
-        </g>
-    </g>
-    <g id="Usecase_6">
-        <g id="ellipse_7">
-            <ellipse cx="599.5" cy="182.5" rx="34.5" ry="18.5" style="fill:none; stroke:black; stroke-width:1;"/>
-        </g>
-        <g id="text_10">
-            <text style="font-size:11px" x="572" y="185">Brukstilfelle</text>
-        </g>
-    </g>
-    <g id="Usecase_7">
-        <g id="ellipse_8">
-            <ellipse cx="577.5" cy="134.5" rx="34.5" ry="18.5" style="fill:none; stroke:black; stroke-width:1;"/>
-        </g>
-        <g id="text_11">
-            <text style="font-size:11px" x="550" y="137">Brukstilfelle</text>
-        </g>
-    </g>
-    <g id="Usecase_8">
-        <g id="ellipse_9">
-            <ellipse cx="458.5" cy="34.5" rx="34.5" ry="18.5" style="fill:none; stroke:black; stroke-width:1;"/>
-        </g>
-        <g id="text_12">
-            <text style="font-size:11px" x="431" y="37">Brukstilfelle</text>
+            <text style="font-size:11px" x="33" y="470">Component</text>
         </g>
     </g>
     <g id="Connection_1">
-        <g id="line_18">
+        <g id="line_47">
             <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="393.0" x2="380.0" y1="120.0" y2="31.0"/>
-        </g>
-    </g>
-    <g id="Connection_2">
-        <g id="line_19">
-            <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="443.0" x2="543.0" y1="130.0" y2="124.0"/>
-        </g>
-    </g>
-    <g id="Connection_3">
-        <g id="line_20">
-            <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="433.0" x2="439.0" y1="120.0" y2="53.0"/>
-        </g>
-    </g>
-    <g id="Connection_4">
-        <g id="line_21">
-            <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="393.0" x2="243.0" y1="130.0" y2="135.0"/>
-        </g>
-    </g>
-    <g id="Connection_5">
-        <g id="line_22">
-            <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="393.0" x2="235.0" y1="170.0" y2="176.0"/>
-        </g>
-    </g>
-    <g id="Connection_6">
-        <g id="line_23">
-            <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="393.0" x2="396.0" y1="180.0" y2="333.0"/>
-        </g>
-    </g>
-    <g id="Connection_7">
-        <g id="line_24">
-            <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="433.0" x2="439.0" y1="180.0" y2="313.0"/>
-        </g>
-    </g>
-    <g id="Connection_8">
-        <g id="line_25">
-            <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="443.0" x2="565.0" y1="170.0" y2="172.0"/>
-        </g>
-    </g>
-    <g id="Connection_9">
-        <g id="line_26">
-            <line style="fill:none; stroke:black; stroke-width:1;"
-                x1="116.0" x2="393.0" y1="223.0" y2="180.0"/>
+                x1="358.0" x2="428.0" y1="262.0" y2="316.0"/>
         </g>
     </g>
 </svg>
