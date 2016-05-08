@@ -36,7 +36,7 @@ abstract public class Figuremodel implements IFigure {
 	protected abstract Figuremodel instance(int x, int y);
 
 	public Figuremodel newInstance(int x, int y) {
-		return instance(x, y)
+		return instance(x, y);
 	}
 
 	public String getFigureName() {
