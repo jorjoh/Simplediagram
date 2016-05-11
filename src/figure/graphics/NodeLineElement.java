@@ -30,19 +30,17 @@ public class NodeLineElement extends LineElement {
 
 	protected ArrayList<Point> traceresult() {
 		ArrayList<Point> q = new ArrayList<Point>();
-		//Hvis verktikal :
+
 		if(x2-x1 == 0){
 			q.add(new Point(realstop.x,((realstart.y+realstop.y)/4)));
 			q.add(new Point(realstop.x,((realstart.y+realstop.y)/4)*2));
 			q.add(new Point(realstop.x,((realstart.y+realstop.y)/4)*3));
-			//System.out.println("vertikallinje");
 		}
-		//Hvis horisontal
+
 		if(y2-y1 == 0){
 			q.add(new Point((realstart.x + realstop.x)/4, realstop.y));
 			q.add(new Point(((realstart.x+realstop.x)/4)*2, realstop.y));
 			q.add(new Point(((realstart.x+realstop.x)/4)*3, realstop.y));
-			//System.out.println("horisontallinje");
 		}
 		return q;
 	}

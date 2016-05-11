@@ -29,17 +29,15 @@ public class SquareElement extends LineElement {
 
 	protected ArrayList<Point> traceresult() {
 		ArrayList<Point> q = new ArrayList<Point>();
-		//Hvis verktikal :
+
 		if(x2-x1 == 0){
 			q.add(new Point(realstop.x,((realstart.y+realstop.y)/3)));
 			q.add(new Point(realstop.x,((realstart.y+realstop.y)/3)*2));
-			//System.out.println("vertikallinje");
 		}
-		//Hvis horisontal
+
 		if(y2-y1 == 0){
 			q.add(new Point(((realstart.x+realstop.x)/3), realstop.y));
 			q.add(new Point(((realstart.x+realstop.x)/3)*2, realstop.y));
-			//System.out.println("horisontallinje");
 		}
 		return q;
 	}
