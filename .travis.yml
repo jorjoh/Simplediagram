@@ -1,1 +1,12 @@
 language: java
+
+cache:
+  directories:
+    - $HOME/.src/caches/
+
+install: ant deps
+
+jdk:
+  - oraclejdk8
+  - oraclejdk7
+  - openjdk6
