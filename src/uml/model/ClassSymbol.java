@@ -27,13 +27,9 @@ public class ClassSymbol extends Figuremodel {
 			Point topp = new Point(700, 100);
 			virtual = new Dimension(150, 150);
 
-			// venstreside
 			elements.add(new SquareElement(venstre, new Point(150, 100), Hold.TRACE));
-			// hoyreside
 			elements.add(new SquareElement(hoyreside, new Point(700, 700), Hold.TRACE));
-			// bunn
 			elements.add(new SquareElement(bunn, new Point(150, 700), Hold.TRACE));
-			// topp
 			elements.add(new SquareElement(topp, new Point(150, 100), Hold.TRACE));
 
 			elements.add(new TextElement("ClassSymbol", LabelAlign.BOTTOM));

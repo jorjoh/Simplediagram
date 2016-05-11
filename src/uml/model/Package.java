@@ -22,13 +22,9 @@ public class Package extends Figuremodel {
 		Point topp = new Point(900, 200);
 		virtual = new Dimension(150, 150);
 
-		// venstreside
 		elements.add(new PackageLineElement(venstre, new Point(130, 200), Hold.TRACE));
-		// hoyreside
 		elements.add(new PackageLineElement(hoyreside, new Point(900, 800), Hold.TRACE));
-		// bunn
 		elements.add(new PackageLineElement(bunn, new Point(150, 800), Hold.TRACE));
-		// topp
 		elements.add(new PackageLineElement(topp, new Point(150, 200), Hold.NONE));
 
 		elements.add(new TextElement("Package", LabelAlign.BOTTOM));

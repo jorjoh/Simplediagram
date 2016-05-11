@@ -1,7 +1,5 @@
 package uml.model;
 
-import figure.graphics.LineElement;
-import figure.graphics.SquareElement;
 import figure.graphics.TabLineElement;
 import figure.graphics.TextElement;
 import figure.model.Figuremodel;
@@ -26,13 +24,9 @@ public class Tab extends Package {
 		Point topp = new Point(450, 100);
 		virtual = new Dimension(150, 150);
 
-		// venstreside
 		elements.add(new TabLineElement(venstre, new Point(130, 100), Hold.TRACE));
-		// hoyreside
 		elements.add(new TabLineElement(hoyreside, new Point(450, 200), Hold.TRACE));
-		// bunn
 		elements.add(new TabLineElement(bunn, new Point(150, 200), Hold.NONE));
-		// topp
 		elements.add(new TabLineElement(topp, new Point(150, 100), Hold.TRACE));
 
 		elements.add(new TextElement("", LabelAlign.BOTTOM));

@@ -28,19 +28,16 @@ public class Component extends Figuremodel {
 		Point strek2 = new Point(650,200);
 		Point strek3under = new Point(500,910);
 
-		//Smallcomponent
 		Point compvenstre = new Point(800, 300);
 		Point comphoyre = new Point(870, 300);
 		Point compbunn = new Point(800, 500);
 		Point comptopp = new Point(800, 300);
 
-		//Smallcomponent1
 		Point smallcompvenstre = new Point(830, 350);
 		Point smallcomphoyre = new Point(770, 350);
 		Point smallcompbunn = new Point(770, 380);
 		Point smallcomptopp = new Point(770, 350);
 
-		//Smallcomponent2
 		Point smallcomp2venstre = new Point(830, 430);
 		Point smallcomp2hoyre = new Point(770, 430);
 		Point smallcomp2bunn = new Point(770, 430);
@@ -49,48 +46,34 @@ public class Component extends Figuremodel {
 
 		virtual = new Dimension(200, 200);
 
-		// venstreside
 		elements.add(new ComponentLineElement(venstre, new Point(50, 200), Hold.TRACE));
-		// hoyreside
 		elements.add(new ComponentLineElement(hoyreside, new Point(900, 800), Hold.TRACE));
-		// bunn
 		elements.add(new ComponentLineElement(bunn, new Point(50, 800), Hold.NONE));
-		// topp
 		elements.add(new ComponentLineElement(topp, new Point(50, 200), Hold.NONE));
 
-		// strek1
 		elements.add(new ComponentLineElement(strek1, new Point(350, 110), Hold.NONE));
-		// strek2
 		elements.add(new ComponentLineElement(strek2, new Point(650, 110), Hold.NONE));
-		//strek 3 under
+
 		elements.add(new ComponentLineElement(strek3under, new Point(500, 800), Hold.NONE));
+		elements.add(new EllipseElement(new Point(350, 100), new Point(70, 90), Hold.TRACE));
+		elements.add(new EllipseElement(new Point(650, 100), new Point(70, 90), Hold.TRACE));
+		elements.add(new EllipseElement(new Point(500, 1010), new Point(70, 90), Hold.NONE));
 
-		elements.add(new EllipseElement(new Point(350, 100), new Point(70, 90),
-				Hold.TRACE));
-		elements.add(new EllipseElement(new Point(650, 100), new Point(70, 90),
-				Hold.TRACE));
-		elements.add(new EllipseElement(new Point(500, 1010), new Point(70, 90),
-				Hold.NONE));
-
-		/** Smallcomponent **/
 		elements.add(new ComponentLineElement(compvenstre,new Point(800,500),Hold.NONE));
 		elements.add(new ComponentLineElement(comphoyre,new Point(870,500),Hold.NONE));
 		elements.add(new ComponentLineElement(compbunn,new Point(870,500),Hold.NONE));
 		elements.add(new ComponentLineElement(comptopp,new Point(870,300),Hold.NONE));
-		/**End of small component**/
 
-		/**SmalerComponent1**/
 		elements.add(new ComponentLineElement(smallcompvenstre,new Point(830,380),Hold.NONE));
 		elements.add(new ComponentLineElement(smallcomphoyre,new Point(770,380),Hold.NONE));
 		elements.add(new ComponentLineElement(smallcompbunn,new Point(830,380),Hold.NONE));
 		elements.add(new ComponentLineElement(smallcomptopp,new Point(830,350),Hold.NONE));
-		/**EndOfSmlaerComponent1**/
-		/**SmalerComponent2**/
+
 		elements.add(new ComponentLineElement(smallcomp2venstre,new Point(830,400),Hold.NONE));
 		elements.add(new ComponentLineElement(smallcomp2hoyre,new Point(770,400),Hold.NONE));
 		elements.add(new ComponentLineElement(smallcomp2bunn,new Point(830,430),Hold.NONE));
 		elements.add(new ComponentLineElement(smallcomp2topp,new Point(830,400),Hold.NONE));
-		/**EndOfSmlaerComponent2**/
+
 		elements.add(new TextElement("Component", LabelAlign.CENTER));
 	}
 
