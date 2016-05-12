@@ -1,6 +1,6 @@
 package uml.model;
 
-import figure.graphics.SquareElement;
+import figure.graphics.ClassSymbolLineElement;
 import figure.graphics.TextElement;
 import figure.model.Figuremodel;
 
@@ -26,10 +26,10 @@ public class ClassSymbol extends Figuremodel {
 			Point bottom = new Point(700, 700);
 			Point top = new Point(700, 100);
 
-			elements.add(new SquareElement(left, new Point(150, 100), Hold.TRACE));
-			elements.add(new SquareElement(right, new Point(700, 700), Hold.TRACE));
-			elements.add(new SquareElement(bottom, new Point(150, 700), Hold.TRACE));
-			elements.add(new SquareElement(top, new Point(150, 100), Hold.TRACE));
+			elements.add(new ClassSymbolLineElement(left, new Point(150, 100), Hold.TRACE));
+			elements.add(new ClassSymbolLineElement(right, new Point(700, 700), Hold.TRACE));
+			elements.add(new ClassSymbolLineElement(bottom, new Point(150, 700), Hold.TRACE));
+			elements.add(new ClassSymbolLineElement(top, new Point(150, 100), Hold.TRACE));
 
 			elements.add(new TextElement("ClassSymbol", LabelAlign.BOTTOM));
 		}

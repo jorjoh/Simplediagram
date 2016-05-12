@@ -9,9 +9,9 @@ import java.util.ArrayList;
 /**
  * Created by Jørgen Johansen on 26.04.2016.
  */
-public class SquareElement extends LineElement {
+public class ClassSymbolLineElement extends LineElement {
 
-	public SquareElement(Point a, Point b, Hold c) {
+	public ClassSymbolLineElement(Point a, Point b, Hold c) {
 		super(a,b,c);
 		virtualstart = a;
 		virtualstop = b;
