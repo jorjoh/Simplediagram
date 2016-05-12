@@ -16,18 +16,17 @@ public class Tab extends Package {
 		figureName = "Package";
 		start = new Point(x, y);
 		reference = new Point(500, 180);
-
-		Point venstre = new Point(130, 200);
-		Point hoyreside = new Point(450, 100);
-
-		Point bunn = new Point(450, 200);
-		Point topp = new Point(450, 100);
 		virtual = new Dimension(150, 150);
 
-		elements.add(new TabLineElement(venstre, new Point(130, 100), Hold.TRACE));
-		elements.add(new TabLineElement(hoyreside, new Point(450, 200), Hold.TRACE));
-		elements.add(new TabLineElement(bunn, new Point(150, 200), Hold.NONE));
-		elements.add(new TabLineElement(topp, new Point(150, 100), Hold.TRACE));
+		Point left = new Point(130, 200);
+		Point right = new Point(450, 100);
+		Point bottom = new Point(450, 200);
+		Point top = new Point(450, 100);
+
+		elements.add(new TabLineElement(left, new Point(130, 100), Hold.TRACE));
+		elements.add(new TabLineElement(right, new Point(450, 200), Hold.TRACE));
+		elements.add(new TabLineElement(bottom, new Point(150, 200), Hold.NONE));
+		elements.add(new TabLineElement(top, new Point(150, 100), Hold.TRACE));
 
 		elements.add(new TextElement("", LabelAlign.BOTTOM));
 	}

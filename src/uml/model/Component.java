@@ -17,62 +17,60 @@ public class Component extends Figuremodel {
 		figureName = "Component";
 		start = new Point(x, y);
 		reference = new Point(150, 180);
-
-		Point venstre = new Point(50, 800);
-		Point hoyreside = new Point(900, 200);
-
-		Point bunn = new Point(900, 800);
-		Point topp = new Point(900, 200);
-
-		Point strek1 = new Point(350,200);
-		Point strek2 = new Point(650,200);
-		Point strek3under = new Point(500,910);
-
-		Point compvenstre = new Point(800, 300);
-		Point comphoyre = new Point(870, 300);
-		Point compbunn = new Point(800, 500);
-		Point comptopp = new Point(800, 300);
-
-		Point smallcompvenstre = new Point(830, 350);
-		Point smallcomphoyre = new Point(770, 350);
-		Point smallcompbunn = new Point(770, 380);
-		Point smallcomptopp = new Point(770, 350);
-
-		Point smallcomp2venstre = new Point(830, 430);
-		Point smallcomp2hoyre = new Point(770, 430);
-		Point smallcomp2bunn = new Point(770, 430);
-		Point smallcomp2topp = new Point(770, 400);
-
-
 		virtual = new Dimension(200, 200);
 
-		elements.add(new ComponentLineElement(venstre, new Point(50, 200), Hold.TRACE));
-		elements.add(new ComponentLineElement(hoyreside, new Point(900, 800), Hold.TRACE));
-		elements.add(new ComponentLineElement(bunn, new Point(50, 800), Hold.NONE));
-		elements.add(new ComponentLineElement(topp, new Point(50, 200), Hold.NONE));
+		Point outsideLeft = new Point(50, 800);
+		Point outsideRight = new Point(900, 200);
 
-		elements.add(new ComponentLineElement(strek1, new Point(350, 110), Hold.NONE));
-		elements.add(new ComponentLineElement(strek2, new Point(650, 110), Hold.NONE));
+		Point bottomHorizontal = new Point(900, 800);
+		Point topHorizontal = new Point(900, 200);
 
-		elements.add(new ComponentLineElement(strek3under, new Point(500, 800), Hold.NONE));
+		Point topLeftVertical = new Point(350,200);
+		Point topRightVertical = new Point(650,200);
+		Point bottomVertical = new Point(500,910);
+
+		Point componentLeft = new Point(800, 300);
+		Point componentRight = new Point(870, 300);
+		Point componentBottom = new Point(800, 500);
+		Point componentTop = new Point(800, 300);
+
+		Point smallTopComponentLeft = new Point(830, 350);
+		Point smallTopComponentRight = new Point(770, 350);
+		Point smallTopComponentBottom = new Point(770, 380);
+		Point smallTopComponentTop = new Point(770, 350);
+
+		Point smallBottomComponentLeft = new Point(830, 430);
+		Point smallBottomComponentRight = new Point(770, 430);
+		Point smallBottomComponentBottom = new Point(770, 430);
+		Point smallBottomComponentTop = new Point(770, 400);
+
+		elements.add(new ComponentLineElement(outsideLeft, new Point(50, 200), Hold.TRACE));
+		elements.add(new ComponentLineElement(outsideRight, new Point(900, 800), Hold.TRACE));
+		elements.add(new ComponentLineElement(bottomHorizontal, new Point(50, 800), Hold.NONE));
+		elements.add(new ComponentLineElement(topHorizontal, new Point(50, 200), Hold.NONE));
+
+		elements.add(new ComponentLineElement(topLeftVertical, new Point(350, 110), Hold.NONE));
+		elements.add(new ComponentLineElement(topRightVertical, new Point(650, 110), Hold.NONE));
+
+		elements.add(new ComponentLineElement(bottomVertical, new Point(500, 800), Hold.NONE));
 		elements.add(new EllipseElement(new Point(350, 100), new Point(70, 90), Hold.TRACE));
 		elements.add(new EllipseElement(new Point(650, 100), new Point(70, 90), Hold.TRACE));
 		elements.add(new EllipseElement(new Point(500, 1010), new Point(70, 90), Hold.NONE));
 
-		elements.add(new ComponentLineElement(compvenstre,new Point(800,500),Hold.NONE));
-		elements.add(new ComponentLineElement(comphoyre,new Point(870,500),Hold.NONE));
-		elements.add(new ComponentLineElement(compbunn,new Point(870,500),Hold.NONE));
-		elements.add(new ComponentLineElement(comptopp,new Point(870,300),Hold.NONE));
+		elements.add(new ComponentLineElement(componentLeft,new Point(800,500),Hold.NONE));
+		elements.add(new ComponentLineElement(componentRight,new Point(870,500),Hold.NONE));
+		elements.add(new ComponentLineElement(componentBottom,new Point(870,500),Hold.NONE));
+		elements.add(new ComponentLineElement(componentTop,new Point(870,300),Hold.NONE));
 
-		elements.add(new ComponentLineElement(smallcompvenstre,new Point(830,380),Hold.NONE));
-		elements.add(new ComponentLineElement(smallcomphoyre,new Point(770,380),Hold.NONE));
-		elements.add(new ComponentLineElement(smallcompbunn,new Point(830,380),Hold.NONE));
-		elements.add(new ComponentLineElement(smallcomptopp,new Point(830,350),Hold.NONE));
+		elements.add(new ComponentLineElement(smallTopComponentLeft,new Point(830,380),Hold.NONE));
+		elements.add(new ComponentLineElement(smallTopComponentRight,new Point(770,380),Hold.NONE));
+		elements.add(new ComponentLineElement(smallTopComponentBottom,new Point(830,380),Hold.NONE));
+		elements.add(new ComponentLineElement(smallTopComponentTop,new Point(830,350),Hold.NONE));
 
-		elements.add(new ComponentLineElement(smallcomp2venstre,new Point(830,400),Hold.NONE));
-		elements.add(new ComponentLineElement(smallcomp2hoyre,new Point(770,400),Hold.NONE));
-		elements.add(new ComponentLineElement(smallcomp2bunn,new Point(830,430),Hold.NONE));
-		elements.add(new ComponentLineElement(smallcomp2topp,new Point(830,400),Hold.NONE));
+		elements.add(new ComponentLineElement(smallBottomComponentLeft,new Point(830,400),Hold.NONE));
+		elements.add(new ComponentLineElement(smallBottomComponentRight,new Point(770,400),Hold.NONE));
+		elements.add(new ComponentLineElement(smallBottomComponentBottom,new Point(830,430),Hold.NONE));
+		elements.add(new ComponentLineElement(smallBottomComponentTop,new Point(830,400),Hold.NONE));
 
 		elements.add(new TextElement("Component", LabelAlign.CENTER));
 	}

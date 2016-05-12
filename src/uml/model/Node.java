@@ -17,26 +17,26 @@ public class Node extends Figuremodel{
 		reference = new Point(500, 180);
 		virtual = new Dimension(200, 200);
 
-		Point frontvenstreside = new Point(50, 800);
-		Point overbunn = new Point(50, 200);
-		Point fronthoyreside = new Point(500, 800);
-		Point frontbunn = new Point(500, 800);
-		Point toppvenstre = new Point(50, 200);
-		Point overtopp = new Point(150, 30);
-		Point topphoyre = new Point(500, 200);
-		Point sidebunn = new Point(500, 800);
-		Point sidehoyre = new Point(600, 30);
+		Point frontLeft = new Point(50, 800);
+		Point frontRight = new Point(500, 800);
+		Point frontBottom = new Point(500, 800);
+		Point topLeft = new Point(50, 200);
+		Point topHorizontal = new Point(150, 30);
+		Point topRight = new Point(500, 200);
+		Point topBottom = new Point(50, 200);
+		Point sideRight = new Point(600, 30);
+		Point sideBottom = new Point(500, 800);
 
-		elements.add(new NodeLineElement(frontvenstreside, new Point(50, 200), Hold.TRACE));
-		elements.add(new NodeLineElement(fronthoyreside, new Point(500,200), Hold.NONE));
-		elements.add(new NodeLineElement(frontbunn, new Point(50,800), Hold.TRACE));
-		elements.add(new NodeLineElement(sidebunn, new Point(600,560),Hold.NONE));
-		elements.add(new NodeLineElement(sidehoyre, new Point(600,560),Hold.TRACE));
+		elements.add(new NodeLineElement(frontLeft, new Point(50, 200), Hold.TRACE));
+		elements.add(new NodeLineElement(frontRight, new Point(500,200), Hold.NONE));
+		elements.add(new NodeLineElement(frontBottom, new Point(50,800), Hold.TRACE));
+		elements.add(new NodeLineElement(sideBottom, new Point(600,560),Hold.NONE));
+		elements.add(new NodeLineElement(sideRight, new Point(600,560),Hold.TRACE));
 
-		elements.add(new NodeLineElement(toppvenstre, new Point(150, 30), Hold.NONE));
-		elements.add(new NodeLineElement(topphoyre, new Point(600, 30), Hold.NONE));
-		elements.add(new NodeLineElement(overtopp, new Point(600, 30), Hold.TRACE));
-		elements.add(new NodeLineElement(overbunn, new Point(500, 200), Hold.NONE));
+		elements.add(new NodeLineElement(topLeft, new Point(150, 30), Hold.NONE));
+		elements.add(new NodeLineElement(topRight, new Point(600, 30), Hold.NONE));
+		elements.add(new NodeLineElement(topHorizontal, new Point(600, 30), Hold.TRACE));
+		elements.add(new NodeLineElement(topBottom, new Point(500, 200), Hold.NONE));
 
 		elements.add(new TextElement("Node", LabelAlign.BOTTOM));
 	}

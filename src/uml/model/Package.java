@@ -14,18 +14,17 @@ public class Package extends Figuremodel {
 		figureName = "Package";
 		start = new Point(x, y);
 		reference = new Point(500, 180);
-
-		Point venstre = new Point(130, 800);
-		Point hoyreside = new Point(900, 200);
-
-		Point bunn = new Point(900, 800);
-		Point topp = new Point(900, 200);
 		virtual = new Dimension(150, 150);
 
-		elements.add(new PackageLineElement(venstre, new Point(130, 200), Hold.TRACE));
-		elements.add(new PackageLineElement(hoyreside, new Point(900, 800), Hold.TRACE));
-		elements.add(new PackageLineElement(bunn, new Point(150, 800), Hold.TRACE));
-		elements.add(new PackageLineElement(topp, new Point(150, 200), Hold.NONE));
+		Point left = new Point(130, 800);
+		Point right = new Point(900, 200);
+		Point bottom = new Point(900, 800);
+		Point top = new Point(900, 200);
+
+		elements.add(new PackageLineElement(left, new Point(130, 200), Hold.TRACE));
+		elements.add(new PackageLineElement(right, new Point(900, 800), Hold.TRACE));
+		elements.add(new PackageLineElement(bottom, new Point(150, 800), Hold.TRACE));
+		elements.add(new PackageLineElement(top, new Point(150, 200), Hold.NONE));
 
 		elements.add(new TextElement("Package", LabelAlign.BOTTOM));
 	}
