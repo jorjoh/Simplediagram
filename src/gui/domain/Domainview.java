@@ -5,6 +5,7 @@ import figure.model.IFigure;
 import svg.Svg;
 import uml.graphics.Thing;
 import uml.model.*;
+import uml.model.Package;
 
 import javax.swing.*;
 import java.awt.*;
@@ -25,7 +26,7 @@ public class Domainview extends JPanel implements IFigure {
 		diagram.addFigure(new Business(10, 115));
 		diagram.addFigure(new ClassSymbol(10,160));
 		diagram.addFigure(new Node(10,245));
-		diagram.addFigure(new Tab(10,350));
+		diagram.addFigure(new Package(10,350));
 		diagram.addFigure(new uml.model.Component(10,430));
 		setShadow(Shadows.LOW.f());
 		setBackground(Color.WHITE);

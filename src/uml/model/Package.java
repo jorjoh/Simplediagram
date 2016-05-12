@@ -5,12 +5,10 @@ import figure.model.Figuremodel;
 
 import java.awt.*;
 
-/**
- * Created by Jørgen Johansen on 28.04.2016.
- */
-public class Package extends Figuremodel {
+public class Package extends Tab {
 
 	public Package(int x, int y) {
+		super(x, y);
 		figureName = "Package";
 		start = new Point(x, y);
 		reference = new Point(500, 180);

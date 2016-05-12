@@ -6,9 +6,6 @@ import figure.model.Figuremodel;
 
 import java.awt.*;
 
-/**
- * Created by Jørgen Johansen on 26.04.2016.
- */
 public class ClassSymbol extends Figuremodel {
 
 		// Figuren plasseres p� en virtuell flate p� 1000X1000

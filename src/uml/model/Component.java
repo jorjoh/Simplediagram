@@ -8,9 +8,6 @@ import figure.model.Figuremodel;
 
 import java.awt.*;
 
-/**
- * Created by Jørgen Johansen on 28.04.2016.
- */
 public class Component extends Figuremodel {
 
 	public Component(int x, int y) {

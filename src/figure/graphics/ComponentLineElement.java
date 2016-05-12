@@ -6,9 +6,6 @@ import java.awt.*;
 import java.awt.geom.Line2D;
 import java.util.ArrayList;
 
-/**
- * Created by Jørgen Johansen on 03.05.2016.
- */
 public class ComponentLineElement extends LineElement {
 
 	public ComponentLineElement(Point a, Point b, Hold c) {

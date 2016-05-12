@@ -2,15 +2,11 @@ package figure.graphics;
 
 import figure.model.IFigure;
 import figure.model.Scaler;
-import javafx.scene.shape.Line;
 
 import java.awt.*;
 import java.awt.geom.Line2D;
 import java.util.ArrayList;
 
-/**
- * Created by Jørgen Johansen on 03.05.2016.
- */
 public class PackageLineElement extends LineElement {
 
 	public PackageLineElement(Point a, Point b, IFigure.Hold c) {

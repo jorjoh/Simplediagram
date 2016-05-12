@@ -7,9 +7,6 @@ import java.awt.*;
 import java.awt.geom.Line2D;
 import java.util.ArrayList;
 
-/**
- * Created by Jørgen Johansen on 28.04.2016.
- */
 public class NodeLineElement extends LineElement {
 
 	public NodeLineElement(Point a, Point b, Hold c) {

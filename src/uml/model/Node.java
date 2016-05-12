@@ -6,9 +6,6 @@ import figure.model.Figuremodel;
 
 import java.awt.*;
 
-/**
- * Created by Jørgen Johansen on 24.04.2016.
- */
 public class Node extends Figuremodel{
 
 	public Node(int x, int y) {

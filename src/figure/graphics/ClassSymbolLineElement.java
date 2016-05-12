@@ -6,9 +6,6 @@ import java.awt.*;
 import java.awt.geom.Line2D;
 import java.util.ArrayList;
 
-/**
- * Created by Jørgen Johansen on 26.04.2016.
- */
 public class ClassSymbolLineElement extends LineElement {
 
 	public ClassSymbolLineElement(Point a, Point b, Hold c) {
